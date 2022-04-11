@@ -1,0 +1,22 @@
+mixin VadymHeader()
+  header.vad-header
+    .container.vad-header__wrapper
+      +logo( {text:"Foodieland"} )
+      .vad-header__block
+        .vad-header__burger
+          span
+        .vad-header__navigation
+          +navigation()
+            +listItem("#home","HOME", classes="navigation__link")
+            +listItem("#about","ABOUT", classes="navigation__link")
+            +listItem("#works","WORKS", classes="navigation__link")
+            +listItem("#blog","BLOG", classes="navigation__link")
+            +listItem("#contact","CONTACT", classes="navigation__link")
+        .vad-header__button-block
+          button(type="button" class="btn btn-dark vad-header__btn") 
+            a(href="#" target="_blank" class="vad-header__link")  Sign In
+          button(type="button" class="btn btn-dark vad-header__btn") 
+            a(href="#" target="_blank" class="vad-header__link")  Sign Up
+
+    
+      

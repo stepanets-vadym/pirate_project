@@ -1,0 +1,24 @@
+extends ./src/_extends/common
+//- *Фав-іконка
+block favico
+  link(rel="shortcut icon", href="./assets/favico/ForkKnife.ico", type="image/x-icon")
+//- *Заголовок
+block title
+  title Foodieland
+//- *Блок стилів
+block style
+  link(rel="stylesheet", href="https://necolas.github.io/normalize.css/8.0.1/normalize.css")
+//- * Сюди підключаємо контент
+block content
+  +VadymHeader()
+  +NazarBanner()
+  +SergiyCategories()
+  +DimaSimple()
+  +DavidContact()
+  +EvgenSubscribe()
+  +EvgenFooter()
+
+
+//- * Блок джаваскриптів 
+block script 
+  script(src="./index.js")
