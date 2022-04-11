@@ -1,5 +1,5 @@
 .vad-header {
-  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2) ;
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
   background-color: $c-white;
   position: fixed;
   right: 0;
@@ -23,11 +23,10 @@
       width: auto;
       flex-direction: row-reverse;
     }
-
   }
 
   &__burger {
-    @include media("<=tablet") { 
+    @include media("<=tablet") {
       z-index: 5;
       display: block;
       position: relative;
@@ -37,7 +36,7 @@
       margin-left: 20px;
       & span,
       &::before,
-      &::after{
+      &::after {
         left: 0;
         position: absolute;
         height: 10%;
@@ -46,17 +45,17 @@
         background-color: $c-black;
       }
       &::before,
-      &::after{
+      &::after {
         content: "";
       }
       &::before {
         top: 0;
       }
-    
+
       &::after {
         bottom: 0;
       }
-      
+
       & span {
         top: 50%;
         transform: scale(1) translate(0px, -50%);
@@ -64,7 +63,7 @@
       &._active span {
         transform: scale(0) translate(0px, -50%);
       }
-    
+
       &._active::before {
         top: 50%;
         transform: rotate(-45deg) translate(0px, -50%);
@@ -74,16 +73,16 @@
         transform: rotate(45deg) translate(0px, 50%);
       }
     }
-    @include media("<=phone") { 
+    @include media("<=phone") {
       margin-left: 10px;
     }
   }
 
-  &__btn{
+  &__btn {
     margin-left: 5px;
     position: relative;
     z-index: 10;
-    &:first-child{
+    &:first-child {
       margin-left: 0;
     }
   }
@@ -98,13 +97,18 @@
   font-family: $f-Lobster;
   position: relative;
   z-index: 10;
-  &::after{
-    content: ".";
-    color: $c-orange;
+  & a {
+    color: $c-black;
+    padding: 5px;
+    &::after {
+      content: ".";
+      color: $c-orange;
+    }
   }
+  
 }
 .navigation {
-  @include media("<=tablet") { 
+  @include media("<=tablet") {
     position: fixed;
     top: 0;
     left: -100%;
@@ -134,13 +138,11 @@
       display: flex;
       flex-direction: column;
       text-align: center;
-
-
     }
 
     &__list > li {
       margin: 0 auto 30px auto;
-      &:first-child{
+      &:first-child {
         margin-left: auto;
       }
       &:last-child {
@@ -169,11 +171,10 @@
 }
 .list-item {
   margin-left: 54px;
-  &:first-child{
+  &:first-child {
     margin-left: 0;
   }
-  @include media("<=desktop") { 
+  @include media("<=desktop") {
     margin-left: 40px;
   }
 }
-

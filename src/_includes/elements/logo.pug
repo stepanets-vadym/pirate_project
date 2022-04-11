@@ -1,4 +1,5 @@
 mixin logo(args={})
   - var logoText = args.text || "default link text"
 
-  .logo= logoText
+  .logo
+    a(href="#")= logoText
