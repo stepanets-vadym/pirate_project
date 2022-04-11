@@ -89,6 +89,9 @@
 
   &__link {
     color: $c-white;
+    &:hover{
+      color: $c-white;
+    }
   }
 }
 
