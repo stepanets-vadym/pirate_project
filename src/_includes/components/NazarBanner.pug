@@ -1,2 +1,34 @@
 mixin NazarBanner()
-  .Naz-header sdfgsdfsdfsdf
+  .nr-banner
+    .container.nr-banner__wrapper
+      .nr-banner__content 
+        .nr-banner__block 
+          a.nr-banner__recipes(href="#") Hot Recipes
+          h1.nr-banner__title Spicy delicious chicken wings 
+          .nr-banner__information
+            .nr-banner__description Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim 
+            .nr-banner__info 
+              .nr-banner__info-food
+                svg(class="icon icon-Timer")
+                  use(xlink:href="#icon-Timer")
+                .nr-banner__desc 30 Minutes
+              .nr-banner__info-food
+                svg(class="icon icon-ForkKnife")
+                  use(xlink:href="#icon-ForkKnife")
+                .nr-banner__desc Chicken
+            .nr-banner__data
+              .nr-banner__author 
+                .nr-banner__photo-block
+                  img.nr-banner__photo(src="./assets/img/NazarBanner/author.png", alt="Photo")
+                .nr-banner__author-information 
+                  .nr-banner__author-name John Smith
+                  .nr-banner__author-date 15 March 2022
+              .nr-banner__button-block
+                button(type="button" class="e-button e-button--banner")
+                  span.e-button__banner-text View Recipes
+                  svg(class="icon icon-Play")
+                    use(xlink:href="#icon-Play")
+            .nr-banner__image-block2
+              img.nr-banner__image-banner(src="./assets/img/NazarBanner/dish-banner.jpg", alt="Dish")
+        .nr-banner__image-block
+          img.nr-banner__image-banner(src="./assets/img/NazarBanner/dish-banner.jpg", alt="Dish")
