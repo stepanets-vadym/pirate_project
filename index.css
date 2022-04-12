@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import '../Bogdana_form/Bog-form.css';
+@import '../Lesia_recipe/Les_recipe.css';
+@import '../Natalia_health/Nat-health.css';
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
