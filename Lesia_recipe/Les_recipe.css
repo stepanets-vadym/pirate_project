@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import "../Bogdana_form/Bog-form.css";
+@import "../Lesia_recipe/Les_recipe.css";
+@import "../Natalia_health/Nat-health.css";
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -1663,7 +1666,7 @@ h6,
 body {
   color: #000000;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 16;
 }
 
 .icon {
@@ -1707,7 +1710,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .container {
@@ -1850,7 +1853,7 @@ input {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 24;
   font-family: "Lobster", cursive;
   position: relative;
   z-index: 10;
@@ -1944,5 +1947,114 @@ input {
   }
 }
 /*# sourceMappingURL=index.css.map */
+.Les-recipe {
+  display: block;
+  width: 100%;
+  padding-top: 32px;
+  border: 1px solid red;
+}
+.Les-recipe__text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 132px;
+  padding-bottom: 32px;
+}
+.Les-recipe__text__title {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+.Les-recipe__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 1400px) {
+  .Les-recipe__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader h1 {
+  margin: 0%;
+  padding: 0%;
+  text-transform: uppercase;
+  background-image: url(water.jpg);
+  background-repeat: repeat-x;
+}
+
+.Les-card {
+  display: block;
+  max-width: 290px;
+}
+.Les-card__photo {
+  display: block;
+  width: 290px;
+}
+.Les-card__photo__img {
+  border-radius: 20px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.Les-card__photo__link {
+  display: block;
+  max-width: 290px;
+}
+.Les-card__specifics {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 22px;
+  width: 230px;
+}
+.Les-card__specifics__icon {
+  display: flex;
+  justify-content: center;
+}
+.Les-card__specifics__text {
+  font-family: inter;
+  font-style: 14px;
+  color: #357355;
+}
+
+a {
+  color: black;
+  font-style: 18px;
+  font-weight: 700;
+}
+
+a:hover {
+  color: black;
+  text-shadow: 1px 1px 2px #357355;
+}
+
+.Les-card__heart__label {
+  display: block;
+}
+.Les-card__heart__input {
+  display: none;
+}
+.Les-card__heart__label::before {
+  content: "+";
+  margin-left: 10px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: red;
+  border-radius: 50px;
+}
+.Les-card__heart__input[type=checkbox] + label {
+  content: url(../../Lassets/L_svg/03.svg);
+}
 
 /*# sourceMappingURL=Les_recipe.css.map */

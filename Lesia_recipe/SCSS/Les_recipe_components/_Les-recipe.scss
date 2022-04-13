@@ -1,0 +1,46 @@
+.Les-recipe{
+  display: block;
+  width: 100%;
+  padding-top: 32px;
+  border: 1px solid red;
+
+  &__text{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 132px;
+    padding-bottom: 32px;
+
+    &__title{
+      font-family:Inter,sans-serif;
+      font-weight: 600;
+      font-size: 36px;
+    }
+
+  }
+  
+  &__content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: 1400px) {
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+  }
+}
+.loader{
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader h1{
+  margin: 0%;
+  padding: 0%;
+  text-transform: uppercase;
+  background-image: url(water.jpg);
+  background-repeat: repeat-x;
+}
