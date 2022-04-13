@@ -1990,8 +1990,8 @@ img {
 
 @media (max-width: 767px) {
   .yur-banner__title {
-    font-size: 48px;
-    line-height: 64px;
+    font-size: 36px;
+    line-height: 48px;
   }
 }
 .yur-banner__text {
@@ -2045,6 +2045,11 @@ img {
   margin-right: 25px;
 }
 
+@media (max-width: 479px) {
+  .yur-author__name + span {
+    margin-right: 15px;
+  }
+}
 .yur-author__date {
   font-size: 14px;
   font-weight: 500;
@@ -2171,7 +2176,7 @@ img {
 @media (max-width: 767px) {
   .yur-links__link {
     margin-top: 25px;
-    margin-right: 50px;
+    margin-right: 20px;
   }
 
   .yur-links__link:last-child {
@@ -2184,7 +2189,7 @@ img {
 
 @media (max-width: 767px) {
   .yur-links__icon {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 @media (max-width: 767px) {
