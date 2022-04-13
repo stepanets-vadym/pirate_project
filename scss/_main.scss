@@ -45,7 +45,10 @@ a {
 img {
   width: 100%;
 }
-
+p{
+  margin: 0;
+  padding: 0;
+}
 .container {
   @include maxCentered(1300);
   padding-left: 10px;
