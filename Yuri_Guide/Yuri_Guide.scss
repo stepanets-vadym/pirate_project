@@ -192,6 +192,14 @@ img {
   }
 }
 
+.yur-links__title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
 .yur-links__list {
   display: flex;
   flex-direction: column;
@@ -205,24 +213,10 @@ img {
   }
 }
 
-.yur-links__title {
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-.yur-links__icon {
-  width: 32px;
-  height: 32px;
-  padding: 5px;
-}
-
 @media (max-width: 767px) {
   .yur-links__icon {
-    width: 50px;
-    height: 50px;
+    // width: 50px;
+    // height: 50px;
     padding: 5px;
   }
 }
@@ -243,7 +237,21 @@ img {
   }
 }
 
-.yur-icon {
-  width: 100%;
-  height: 100%;
+.yur-links__icon {
+  font-size: 22px;
+}
+
+@media (max-width: 767px) {
+  .yur-links__icon {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  [data-tooltip]:hover:before,
+  [data-tooltip]:hover:after,
+  [data-tooltip]:focus:before,
+  [data-tooltip]:focus:after {
+    visibility: hidden;
+  }
 }
