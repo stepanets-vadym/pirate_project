@@ -5,9 +5,13 @@ $c-orange: #FD8061;
 $c-white: #FFFFFF;
 $c-text-gray: #565656;
 $c-footer: #F4F4F4;
+$c-bg-sub:#E7F9FD;
+$c-text-input: #00000066;
+$c-text-footer: #00000099;
+$c-line-footer: #0000001A;
 
 // Font
-$f-Inter: 'Inter', sans-serif;;
+$f-Inter: 'Inter', sans-serif;
 $f-Lobster: 'Lobster', cursive;
 
 // Font size
@@ -15,6 +19,8 @@ $fs-base: 16px;
 $fs-h1: 64px;
 $fs-h2: 48px;
 $fs-subtitle:24px;
+$fs-text-input-button:14px;
+$fs-text-footer:18px;
 
 // Letter spacing
 $ls-base: 2;

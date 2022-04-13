@@ -1,0 +1,87 @@
+// EvgenSubscribe
+
+// Subscribe block
+.Evg-subscribe__wrapper.container{
+  background-color: $c-bg-sub;
+  flex-direction: column;
+  border-radius: 60px; 
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+  overflow: hidden;
+  display: flex;
+  padding: 0;
+}
+
+// Text block
+.Evg-subscribe__block-text {
+  flex-direction: column;
+  align-self: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  max-width: 620px;
+  display: flex;
+  padding: 5px;
+}
+// Title
+.Evg-subscribe__title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: $fs-h2;
+}
+// Text
+.Evg-subscribe__text {
+  color: $c-text-footer;
+  text-align: center;
+  line-height: 28px;
+}
+
+// Image-button block
+.Evg-subscribe__block-img-btn {
+  justify-content: space-between;
+  display: flex;
+}
+// Image
+.Evg-subscribe__img-salad,.Evg-subscribe__img-salad-egg {
+  align-self: flex-end;
+}
+.Evg-subscribe__img-salad {
+  margin-right: 5px;
+}
+.Evg-subscribe__img-salad-egg {
+  margin-left: 5px;
+}
+
+// Input-button block
+.Evg-subscribe__inp-btn {
+  background-color: $c-white;
+  border-radius: 24px;
+  align-self: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 10px;
+  display: flex;
+  height: 80px;
+  width: 480px;
+}
+// Input
+.Evg-subscribe__inp {
+  font-size: $fs-text-input-button;
+  color: $c-text-input;
+  padding-right: 10px;
+  padding-left: 0;
+  border: none;
+  width: 100%;
+}
+// Button
+.Evg-subscribe__btn {
+  font-size: $fs-text-input-button;
+  background-color: $c-black;
+  border-radius: 16px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: fit-content;
+  color: $c-white;
+}

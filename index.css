@@ -1477,6 +1477,7 @@ template {
   padding: 0;
   margin: 0;
   border: none;
+  border: 1px solid red;
 }
 
 *,
@@ -1820,6 +1821,90 @@ input {
   .list-item {
     margin-left: 40px;
   }
+}
+
+.Evg-subscribe__wrapper.container {
+  background-color: #E7F9FD;
+  flex-direction: column;
+  border-radius: 60px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+  overflow: hidden;
+  display: flex;
+  padding: 0;
+}
+
+.Evg-subscribe__block-text {
+  flex-direction: column;
+  align-self: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  max-width: 620px;
+  display: flex;
+  padding: 5px;
+}
+
+.Evg-subscribe__title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 48px;
+}
+
+.Evg-subscribe__text {
+  color: #00000099;
+  text-align: center;
+  line-height: 28px;
+}
+
+.Evg-subscribe__block-img-btn {
+  justify-content: space-between;
+  display: flex;
+}
+
+.Evg-subscribe__img-salad, .Evg-subscribe__img-salad-egg {
+  align-self: flex-end;
+}
+
+.Evg-subscribe__img-salad {
+  margin-right: 5px;
+}
+
+.Evg-subscribe__img-salad-egg {
+  margin-left: 5px;
+}
+
+.Evg-subscribe__inp-btn {
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  align-self: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 10px;
+  display: flex;
+  height: 80px;
+  width: 480px;
+}
+
+.Evg-subscribe__inp {
+  font-size: 14px;
+  color: #00000066;
+  padding-right: 10px;
+  padding-left: 0;
+  border: none;
+  width: 100%;
+}
+
+.Evg-subscribe__btn {
+  font-size: 14px;
+  background-color: #000000;
+  border-radius: 16px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: fit-content;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=index.css.map */

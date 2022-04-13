@@ -1,2 +1,24 @@
+//- * EvgenSubscribe
+
 mixin EvgenSubscribe()
-  .Evg-header asdaddsasdasd
+  //- Subscribe section
+  section.Evg-subscribe
+    .Evg-subscribe__wrapper.container
+      //- Text block
+      .Evg-subscribe__block-text
+        h2.Evg-subscribe__title Deliciousness to your inbox
+        .Evg-subscribe__text Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim
+      //- Image-button block
+      .Evg-subscribe__block-img-btn
+        //- Image salad block
+        .Evg-subscribe__img-salad
+          img(src="./assets/img/img-EvgenSubscribe/salad.png" alt="foto")
+        //- Input-button block
+        .Evg-subscribe__inp-btn
+          input.Evg-subscribe__inp(type="text" placeholder="Your email address...")
+          button.Evg-subscribe__btn(type="button")
+            span.simptip-position-top(data-tooltip="Click here") Subscribe
+        //- Image salad-egg
+        .Evg-subscribe__img-salad-egg
+          img(src="./assets/img/img-EvgenSubscribe/salad-egg.png" alt="foto")
+        
