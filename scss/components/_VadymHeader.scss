@@ -2,6 +2,7 @@
   border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
   background-color: $c-white;
   position: fixed;
+  z-index: 10;
   right: 0;
   left: 0;
   top: 0;
@@ -27,22 +28,22 @@
 
   &__burger {
     @include media("<=tablet") {
-      z-index: 5;
-      display: block;
       position: relative;
-      width: 24px;
-      height: 14px;
-      cursor: pointer;
       margin-left: 20px;
+      cursor: pointer;
+      display: block;
+      height: 14px;
+      width: 24px;
+      z-index: 5;
       & span,
       &::before,
       &::after {
-        left: 0;
+        transition: all 0.3s ease 0s;
+        background-color: $c-black;
         position: absolute;
         height: 10%;
         width: 100%;
-        transition: all 0.3s ease 0s;
-        background-color: $c-black;
+        left: 0;
       }
       &::before,
       &::after {
@@ -74,13 +75,13 @@
       }
     }
     @include media("<=phone") {
-      margin-left: 10px;
+      margin-left: 5px;
     }
   }
 
   &__btn {
-    margin-left: 5px;
     position: relative;
+    margin-left: 5px;
     z-index: 10;
     &:first-child {
       margin-left: 0;
@@ -89,7 +90,7 @@
 
   &__link {
     color: $c-white;
-    &:hover{
+    &:hover {
       color: $c-white;
     }
   }
@@ -108,16 +109,15 @@
       color: $c-orange;
     }
   }
-  
 }
 .navigation {
   @include media("<=tablet") {
+    background-color: rgba($color: #56b6bb, $alpha: 0.95);
     position: fixed;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: rgba($color: #56b6bb, $alpha: 0.95);
     padding: 120px 30px 30px 30px;
     transition: left 0.3s ease 0s;
     overflow: auto;

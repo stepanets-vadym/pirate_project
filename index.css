@@ -1618,6 +1618,11 @@ img {
   width: 100%;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -1655,6 +1660,7 @@ input {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
   position: fixed;
+  z-index: 10;
   right: 0;
   left: 0;
   top: 0;
@@ -1681,21 +1687,21 @@ input {
 }
 @media (max-width: 768px) {
   .vad-header__burger {
-    z-index: 5;
-    display: block;
     position: relative;
-    width: 24px;
-    height: 14px;
-    cursor: pointer;
     margin-left: 20px;
+    cursor: pointer;
+    display: block;
+    height: 14px;
+    width: 24px;
+    z-index: 5;
   }
   .vad-header__burger span, .vad-header__burger::before, .vad-header__burger::after {
-    left: 0;
+    transition: all 0.3s ease 0s;
+    background-color: #000000;
     position: absolute;
     height: 10%;
     width: 100%;
-    transition: all 0.3s ease 0s;
-    background-color: #000000;
+    left: 0;
   }
   .vad-header__burger::before, .vad-header__burger::after {
     content: "";
@@ -1724,12 +1730,12 @@ input {
 }
 @media (max-width: 480px) {
   .vad-header__burger {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }
 .vad-header__btn {
-  margin-left: 5px;
   position: relative;
+  margin-left: 5px;
   z-index: 10;
 }
 .vad-header__btn:first-child {
@@ -1759,12 +1765,12 @@ input {
 
 @media (max-width: 768px) {
   .navigation {
+    background-color: rgba(86, 182, 187, 0.95);
     position: fixed;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: rgba(86, 182, 187, 0.95);
     padding: 120px 30px 30px 30px;
     transition: left 0.3s ease 0s;
     overflow: auto;
