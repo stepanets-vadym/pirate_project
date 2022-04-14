@@ -1961,7 +1961,7 @@ input {
   font-weight: 600;
   color: #000000;
   padding: 0 20px;
-  font-size: 14px;
+  font-size: 0.875em;
   height: 45px;
 }
 .nr-banner__recipes::before {
@@ -1973,7 +1973,7 @@ input {
 }
 @media (max-width: 480px) {
   .nr-banner__recipes {
-    font-size: 12px;
+    font-size: 0.75em;
     padding: 0 10px;
     height: 40px;
   }
@@ -1983,7 +1983,7 @@ input {
   line-height: 76px;
   margin-top: 30px;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 4em;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   background: #4B3F4D;
   background: linear-gradient(90deg, #4B3F4D 0%, #1A2470 21%, #C9208D 65%, #4B3F4D 100%);
@@ -1997,14 +1997,14 @@ input {
 }
 @media (max-width: 1160px) {
   .nr-banner__title {
-    font-size: 48px;
+    font-size: 3em;
     line-height: 60px;
   }
 }
 @media (max-width: 1024px) {
   .nr-banner__title {
     margin-top: 10px;
-    font-size: 38px;
+    font-size: 3em;
     line-height: 50px;
   }
 }
@@ -2013,20 +2013,20 @@ input {
     text-align: center;
     line-height: 40px;
     margin-top: 20px;
-    font-size: 32px;
+    font-size: 2em;
   }
 }
 .nr-banner__description {
   line-height: 28px;
   margin-top: 25px;
-  font-size: 16px;
+  font-size: 1em;
 }
 @media (max-width: 480px) {
   .nr-banner__description {
     text-align: justify;
     line-height: 24px;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 0.875em;
   }
 }
 .nr-banner__info {
@@ -2079,7 +2079,7 @@ input {
   color: rgba(0, 0, 0, 0.6);
   margin-left: 15px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .nr-banner__author {
   align-items: center;
@@ -2132,13 +2132,13 @@ input {
 .nr-banner__author-name {
   font-weight: 700;
   color: #000000;
-  font-size: 16px;
+  font-size: 1em;
 }
 .nr-banner__author-date {
   line-height: 18px;
   margin-top: 10px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 @media (max-width: 480px) {
   .nr-banner__author-date {
