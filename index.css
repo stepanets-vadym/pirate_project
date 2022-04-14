@@ -1,8 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import '../Bogdana_form/Bog-form.css';
-@import '../Lesia_recipe/Les_recipe.css';
-@import '../Natalia_health/Nat-health.css';
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -2203,6 +2200,209 @@ input {
   }
   100% {
     background-position: left 1000px top 10px;
+  }
+}
+.evg-subscribe__wrapper {
+  background-color: #E7F9FD;
+  flex-direction: column;
+  border-radius: 60px;
+  margin-bottom: 50px;
+  margin-top: 200px;
+  overflow: hidden;
+  display: flex;
+  padding: 0;
+}
+@media (max-width: 1024px) {
+  .evg-subscribe__wrapper {
+    border-radius: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__wrapper {
+    border-radius: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__wrapper {
+    border-radius: 15px;
+  }
+}
+.evg-subscribe__block-text {
+  flex-direction: column;
+  align-self: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  max-width: 620px;
+  display: flex;
+  padding: 5px;
+}
+@media (max-width: 1024px) {
+  .evg-subscribe__block-text {
+    margin-top: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__block-text {
+    margin-top: 4px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__block-text {
+    margin-top: 0;
+  }
+}
+.evg-subscribe__title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 48;
+}
+@media (max-width: 1024px) {
+  .evg-subscribe__title {
+    margin-bottom: 6px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__title {
+    margin-bottom: 5px;
+    line-height: 28px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__title {
+    margin-bottom: 3px;
+    line-height: 18px;
+    font-size: 18px;
+  }
+}
+.evg-subscribe__text {
+  color: #00000099;
+  text-align: center;
+  line-height: 28px;
+}
+@media (max-width: 1024px) {
+  .evg-subscribe__text {
+    line-height: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__text {
+    line-height: 19px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__text {
+    line-height: 12px;
+    font-size: 10px;
+  }
+}
+.evg-subscribe__block-img-btn {
+  justify-content: space-between;
+  display: flex;
+}
+.evg-subscribe__img-salad, .evg-subscribe__img-salad-egg {
+  align-self: flex-end;
+}
+.evg-subscribe__img-salad {
+  margin-right: 5px;
+}
+.evg-subscribe__img-salad-egg {
+  margin-left: 5px;
+}
+.evg-subscribe__inp-btn {
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  align-self: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 10px;
+  display: flex;
+  height: 80px;
+  width: 480px;
+}
+@media (max-width: 1024px) {
+  .evg-subscribe__inp-btn {
+    border-radius: 20px;
+    padding: 7px;
+    height: 60px;
+    width: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__inp-btn {
+    border-radius: 14px;
+    padding: 5px;
+    height: 40px;
+    width: 420px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__inp-btn {
+    border-radius: 6px;
+    padding: 2px;
+    height: 25px;
+    width: 400px;
+  }
+}
+.evg-subscribe__inp {
+  font-size: 14px;
+  color: #00000066;
+  padding-right: 10px;
+  padding-left: 5px;
+  height: 100%;
+  border: none;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .evg-subscribe__inp {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__inp {
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__inp {
+    font-size: 6px;
+  }
+}
+.evg-subscribe__btn {
+  font-size: 14px;
+  background-color: #000000;
+  border-radius: 16px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: fit-content;
+  color: #FFFFFF;
+  height: 100%;
+}
+@media (max-width: 1024px) {
+  .evg-subscribe__btn {
+    font-size: 12px;
+    border-radius: 14px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__btn {
+    padding-right: 5px;
+    border-radius: 10px;
+    padding-left: 5px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__btn {
+    border-radius: 6px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 6px;
   }
 }
 
