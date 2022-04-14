@@ -17,14 +17,23 @@
     color: $c-white;
     display: flex;
     height: 60px;
-    @media (max-width: 800px){
+    @media (min-width: 768px) and (max-width: 800px){
       height: 40px;
       padding: 0 5px;
+    }
+    @include media("<=phone") {
+      height: 30px;
+      padding: 0 10px;
+      font-size: 16px;
     }
   }
   &__banner-text {
     margin-right: 15px;
     font-weight: 600;
     font-size: 14px;
+    @include media("<=phone") {
+      font-size: 12px;
+      margin-right: 10px;
+    }
   }
 }
