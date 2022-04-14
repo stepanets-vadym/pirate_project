@@ -1,4 +1,17 @@
-@import './base';
+// Plugins
+@import './plugins/index';
+// ! Fonts
+@import './fonts';
+// ! Media
+@import './media';
+// Config
+@import './variables';
+// Mixins
+@import './mixins';
+
+// All style
+@import'./null';
+@import'./main';
 @import './elements/index';
 @import './components/index';
 // @import '../Bogdana_form/Bog-form.css';
