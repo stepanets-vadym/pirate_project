@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import '../Bogdana_form/Bog-form.css';
+@import '../Lesia_recipe/Les_recipe.css';
+@import '../Natalia_health/Nat-health.css';
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -1477,7 +1480,6 @@ template {
   padding: 0;
   margin: 0;
   border: none;
-  border: 1px solid red;
 }
 
 *,
@@ -1570,7 +1572,7 @@ h6,
 body {
   color: #000000;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 16;
 }
 
 .icon {
@@ -1613,7 +1615,12 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -1653,6 +1660,7 @@ input {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
   position: fixed;
+  z-index: 10;
   right: 0;
   left: 0;
   top: 0;
@@ -1679,21 +1687,21 @@ input {
 }
 @media (max-width: 768px) {
   .vad-header__burger {
-    z-index: 5;
-    display: block;
     position: relative;
-    width: 24px;
-    height: 14px;
-    cursor: pointer;
     margin-left: 20px;
+    cursor: pointer;
+    display: block;
+    height: 14px;
+    width: 24px;
+    z-index: 5;
   }
   .vad-header__burger span, .vad-header__burger::before, .vad-header__burger::after {
-    left: 0;
+    transition: all 0.3s ease 0s;
+    background-color: #000000;
     position: absolute;
     height: 10%;
     width: 100%;
-    transition: all 0.3s ease 0s;
-    background-color: #000000;
+    left: 0;
   }
   .vad-header__burger::before, .vad-header__burger::after {
     content: "";
@@ -1722,12 +1730,12 @@ input {
 }
 @media (max-width: 480px) {
   .vad-header__burger {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }
 .vad-header__btn {
-  margin-left: 5px;
   position: relative;
+  margin-left: 5px;
   z-index: 10;
 }
 .vad-header__btn:first-child {
@@ -1741,7 +1749,7 @@ input {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 24;
   font-family: "Lobster", cursive;
   position: relative;
   z-index: 10;
@@ -1757,12 +1765,12 @@ input {
 
 @media (max-width: 768px) {
   .navigation {
+    background-color: rgba(86, 182, 187, 0.95);
     position: fixed;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: rgba(86, 182, 187, 0.95);
     padding: 120px 30px 30px 30px;
     transition: left 0.3s ease 0s;
     overflow: auto;
@@ -1823,20 +1831,35 @@ input {
   }
 }
 
-.Evg-subscribe__wrapper.container {
+.evg-subscribe__wrapper.container {
   background-color: #E7F9FD;
   flex-direction: column;
   border-radius: 60px;
   margin-bottom: 50px;
   margin-right: 20px;
   margin-left: 20px;
-  margin-top: 50px;
+  margin-top: 200px;
   overflow: hidden;
   display: flex;
   padding: 0;
 }
+@media (max-width: 1024px) {
+  .evg-subscribe__wrapper.container {
+    border-radius: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__wrapper.container {
+    border-radius: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__wrapper.container {
+    border-radius: 14px;
+  }
+}
 
-.Evg-subscribe__block-text {
+.evg-subscribe__block-text {
   flex-direction: column;
   align-self: center;
   margin-right: 10px;
@@ -1846,37 +1869,89 @@ input {
   display: flex;
   padding: 5px;
 }
-
-.Evg-subscribe__title {
-  margin-bottom: 10px;
-  text-align: center;
-  font-size: 48px;
+@media (max-width: 1024px) {
+  .evg-subscribe__block-text {
+    margin-top: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__block-text {
+    margin-top: 4px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__block-text {
+    margin-top: 0;
+  }
 }
 
-.Evg-subscribe__text {
+.evg-subscribe__title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 48;
+}
+@media (max-width: 1024px) {
+  .evg-subscribe__title {
+    margin-bottom: 6px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__title {
+    margin-bottom: 5px;
+    line-height: 28px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__title {
+    margin-bottom: 3px;
+    line-height: 18px;
+    font-size: 18px;
+  }
+}
+
+.evg-subscribe__text {
   color: #00000099;
   text-align: center;
   line-height: 28px;
 }
+@media (max-width: 1024px) {
+  .evg-subscribe__text {
+    line-height: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__text {
+    line-height: 19px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__text {
+    line-height: 12px;
+    font-size: 10px;
+  }
+}
 
-.Evg-subscribe__block-img-btn {
+.evg-subscribe__block-img-btn {
   justify-content: space-between;
   display: flex;
 }
 
-.Evg-subscribe__img-salad, .Evg-subscribe__img-salad-egg {
+.evg-subscribe__img-salad, .Evg-subscribe__img-salad-egg {
   align-self: flex-end;
 }
 
-.Evg-subscribe__img-salad {
+.evg-subscribe__img-salad {
   margin-right: 5px;
 }
 
-.Evg-subscribe__img-salad-egg {
+.evg-subscribe__img-salad-egg {
   margin-left: 5px;
 }
 
-.Evg-subscribe__inp-btn {
+.evg-subscribe__inp-btn {
   background-color: #FFFFFF;
   border-radius: 24px;
   align-self: center;
@@ -1887,17 +1962,57 @@ input {
   height: 80px;
   width: 480px;
 }
+@media (max-width: 1024px) {
+  .evg-subscribe__inp-btn {
+    border-radius: 20px;
+    padding: 7px;
+    height: 60px;
+    width: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__inp-btn {
+    border-radius: 14px;
+    padding: 5px;
+    height: 40px;
+    width: 420px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__inp-btn {
+    border-radius: 6px;
+    padding: 2px;
+    height: 25px;
+    width: 400px;
+  }
+}
 
-.Evg-subscribe__inp {
+.evg-subscribe__inp {
   font-size: 14px;
   color: #00000066;
   padding-right: 10px;
-  padding-left: 0;
+  padding-left: 5px;
+  height: 100%;
   border: none;
   width: 100%;
 }
+@media (max-width: 1024px) {
+  .evg-subscribe__inp {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__inp {
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__inp {
+    font-size: 6px;
+  }
+}
 
-.Evg-subscribe__btn {
+.evg-subscribe__btn {
   font-size: 14px;
   background-color: #000000;
   border-radius: 16px;
@@ -1905,6 +2020,30 @@ input {
   padding-left: 30px;
   width: fit-content;
   color: #FFFFFF;
+}
+@media (max-width: 1024px) {
+  .evg-subscribe__btn {
+    font-size: 12px;
+    border-radius: 14px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__btn {
+    padding-right: 5px;
+    border-radius: 10px;
+    padding-left: 5px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__btn {
+    border-radius: 6px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 6px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

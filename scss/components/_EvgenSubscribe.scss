@@ -1,21 +1,31 @@
 // EvgenSubscribe
 
 // Subscribe block
-.Evg-subscribe__wrapper.container{
+.evg-subscribe__wrapper.container{
   background-color: $c-bg-sub;
   flex-direction: column;
   border-radius: 60px; 
   margin-bottom: 50px;
   margin-right: 20px;
   margin-left: 20px;
-  margin-top: 50px;
+  margin-top:200px;
   overflow: hidden;
   display: flex;
   padding: 0;
+
+  @include media("<=desktop") {
+    border-radius: 45px;
+  }
+  @include media("<=tablet") {
+    border-radius: 30px;
+  }
+  @include media("<=phone") {
+    border-radius: 14px;
+  }
 }
 
 // Text block
-.Evg-subscribe__block-text {
+.evg-subscribe__block-text {
   flex-direction: column;
   align-self: center;
   margin-right: 10px;
@@ -24,38 +34,75 @@
   max-width: 620px;
   display: flex;
   padding: 5px;
+
+  @include media("<=desktop") {
+    margin-top: 6px;
+  }
+  @include media("<=tablet") {
+    margin-top: 4px;
+  }
+  @include media("<=phone") {
+    margin-top: 0;
+  }
 }
 // Title
-.Evg-subscribe__title {
+.evg-subscribe__title {
   margin-bottom: 10px;
   text-align: center;
   font-size: $fs-h2;
+
+  @include media("<=desktop") {
+    margin-bottom: 6px;
+    font-size: 40px;
+  }
+  @include media("<=tablet") {
+    margin-bottom: 5px;
+    line-height: 28px;
+    font-size: 30px;
+  }
+  @include media("<=phone") {
+    margin-bottom: 3px;
+    line-height: 18px;
+    font-size: 18px;
+  }
 }
 // Text
-.Evg-subscribe__text {
+.evg-subscribe__text {
   color: $c-text-footer;
   text-align: center;
   line-height: 28px;
+
+  @include media("<=desktop") {
+    line-height: 26px;
+  }
+  @include media("<=tablet") {
+    line-height: 19px;
+    font-size: 14px;
+  }
+  @include media("<=phone") {
+    line-height: 12px;
+    font-size: 10px;
+  }
 }
 
 // Image-button block
-.Evg-subscribe__block-img-btn {
+.evg-subscribe__block-img-btn {
   justify-content: space-between;
   display: flex;
 }
 // Image
-.Evg-subscribe__img-salad,.Evg-subscribe__img-salad-egg {
+.evg-subscribe__img-salad,.Evg-subscribe__img-salad-egg {
   align-self: flex-end;
 }
-.Evg-subscribe__img-salad {
+.evg-subscribe__img-salad {
   margin-right: 5px;
 }
-.Evg-subscribe__img-salad-egg {
+.evg-subscribe__img-salad-egg {
   margin-left: 5px;
 }
 
 // Input-button block
-.Evg-subscribe__inp-btn {
+.evg-subscribe__inp-btn {
   background-color: $c-white;
   border-radius: 24px;
   align-self: center;
@@ -65,18 +112,48 @@
   display: flex;
   height: 80px;
   width: 480px;
+
+  @include media("<=desktop") {
+    border-radius: 20px;
+    padding: 7px;
+    height: 60px;
+    width: 450px;
+  }
+  @include media("<=tablet") {
+    border-radius: 14px;
+    padding: 5px;
+    height: 40px;
+    width: 420px;
+  }
+  @include media("<=phone") {
+    border-radius: 6px;
+    padding: 2px;
+    height: 25px;
+    width: 400px;
+  }
 }
 // Input
-.Evg-subscribe__inp {
+.evg-subscribe__inp {
   font-size: $fs-text-input-button;
   color: $c-text-input;
   padding-right: 10px;
-  padding-left: 0;
+  padding-left: 5px;
+  height: 100%;
   border: none;
   width: 100%;
+
+  @include media("<=desktop") {
+    font-size: 12px;
+  }
+  @include media("<=tablet") {
+    font-size: 10px;
+  }
+  @include media("<=phone") {
+    font-size: 6px;
+  }
 }
 // Button
-.Evg-subscribe__btn {
+.evg-subscribe__btn {
   font-size: $fs-text-input-button;
   background-color: $c-black;
   border-radius: 16px;
@@ -84,4 +161,23 @@
   padding-left: 30px;
   width: fit-content;
   color: $c-white;
+
+  @include media("<=desktop") {
+    font-size: 12px;
+    border-radius: 14px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  @include media("<=tablet") {
+    padding-right: 5px;
+    border-radius: 10px;
+    padding-left: 5px;
+    font-size: 10px;
+  }
+  @include media("<=phone") {
+    border-radius: 6px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 6px;
+  }
 }
