@@ -1,19 +1,6 @@
-// Plugins
-@import './plugins/index';
-// ! Fonts
-@import './fonts';
-// ! Media
-@import './media';
-// Config
-@import './variables';
-// Mixins
-@import './mixins';
-
-// All style
-@import'./null';
-@import'./main';
+@import './base';
 @import './elements/index';
 @import './components/index';
-@import '../Bogdana_form/Bog-form.css';
-@import '../Lesia_recipe/Les_recipe.css';
-@import '../Natalia_health/Nat-health.css';
+// @import '../Bogdana_form/Bog-form.css';
+// @import '../Lesia_recipe/Les_recipe.css';
+// @import '../Natalia_health/Nat-health.css';

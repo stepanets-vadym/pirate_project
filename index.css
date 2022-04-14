@@ -1,8 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import '../Bogdana_form/Bog-form.css';
-@import '../Lesia_recipe/Les_recipe.css';
-@import '../Natalia_health/Nat-health.css';
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -1831,34 +1828,31 @@ input {
   }
 }
 
-.evg-subscribe__wrapper.container {
+.evg-subscribe__wrapper {
   background-color: #E7F9FD;
   flex-direction: column;
   border-radius: 60px;
   margin-bottom: 50px;
-  margin-right: 20px;
-  margin-left: 20px;
   margin-top: 200px;
   overflow: hidden;
   display: flex;
   padding: 0;
 }
 @media (max-width: 1024px) {
-  .evg-subscribe__wrapper.container {
+  .evg-subscribe__wrapper {
     border-radius: 45px;
   }
 }
 @media (max-width: 768px) {
-  .evg-subscribe__wrapper.container {
+  .evg-subscribe__wrapper {
     border-radius: 30px;
   }
 }
 @media (max-width: 480px) {
-  .evg-subscribe__wrapper.container {
-    border-radius: 14px;
+  .evg-subscribe__wrapper {
+    border-radius: 15px;
   }
 }
-
 .evg-subscribe__block-text {
   flex-direction: column;
   align-self: center;
@@ -1884,7 +1878,6 @@ input {
     margin-top: 0;
   }
 }
-
 .evg-subscribe__title {
   margin-bottom: 10px;
   text-align: center;
@@ -1910,7 +1903,6 @@ input {
     font-size: 18px;
   }
 }
-
 .evg-subscribe__text {
   color: #00000099;
   text-align: center;
@@ -1933,24 +1925,19 @@ input {
     font-size: 10px;
   }
 }
-
 .evg-subscribe__block-img-btn {
   justify-content: space-between;
   display: flex;
 }
-
-.evg-subscribe__img-salad, .Evg-subscribe__img-salad-egg {
+.evg-subscribe__img-salad, .evg-subscribe__img-salad-egg {
   align-self: flex-end;
 }
-
 .evg-subscribe__img-salad {
   margin-right: 5px;
 }
-
 .evg-subscribe__img-salad-egg {
   margin-left: 5px;
 }
-
 .evg-subscribe__inp-btn {
   background-color: #FFFFFF;
   border-radius: 24px;
@@ -1986,7 +1973,6 @@ input {
     width: 400px;
   }
 }
-
 .evg-subscribe__inp {
   font-size: 14px;
   color: #00000066;
@@ -2011,7 +1997,6 @@ input {
     font-size: 6px;
   }
 }
-
 .evg-subscribe__btn {
   font-size: 14px;
   background-color: #000000;
@@ -2020,6 +2005,7 @@ input {
   padding-left: 30px;
   width: fit-content;
   color: #FFFFFF;
+  height: 100%;
 }
 @media (max-width: 1024px) {
   .evg-subscribe__btn {
