@@ -1,3 +1,4 @@
+@import './../mixins';
 .nr-banner {
   padding-top: 150px;
   height: 100vh;
@@ -12,7 +13,6 @@
     border-radius: 40px;
     position: relative;
     display: flex;
-    // z-index: -1;
     @include media("<=tablet") {
       display: block;
     }
@@ -42,8 +42,8 @@
       min-width: 520px;
     }
     @include media("<=desktop") {
-      max-width: 360px;
-      min-width: 360px;
+      max-width: 385px;
+      min-width: 385px;
     }
     @include media("<=tablet") {
       margin-top: 15px;
@@ -90,8 +90,25 @@
     line-height: 76px;
     margin-top: 30px;
     font-weight: 700;
-    color: $c-black;
     font-size: 64px;
+    text-shadow: 0px 4px 3px rgba($c-black, 0.4),
+      0px 8px 13px rgba($c-black, 0.1), 0px 18px 23px rgba($c-black, 0.1);
+    background: $c-purple-taupe;
+    background: linear-gradient(
+      90deg,
+      $c-purple-taupe 0%,
+      $c-st-patrick-blue 21%,
+      $c-royal-fuchsia 65%,
+      $c-purple-taupe 100%
+    );
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-background-clip: text;
+    animation-duration: 5s;
+    animation-name: title;
+    background-clip: text;
+    color: transparent;
+
     @include media("<=1160px") {
       font-size: 48px;
       line-height: 60px;
@@ -99,7 +116,7 @@
     @include media("<=desktop") {
       margin-top: 10px;
       font-size: 38px;
-      line-height: 1;
+      line-height: 50px;
     }
     @include media("<=phone") {
       text-align: center;
@@ -233,6 +250,7 @@
 
 .nr-super-puper {
   position: relative;
+  
   &__image-box {
     transform: translate(-50%, -50%);
     position: absolute;
@@ -243,5 +261,32 @@
   &__svg {
     height: 150px;
     width: 150px;
+  }
+}
+// SVG animation
+.nr-timer {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation-name: time-circle;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+@keyframes time-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+// Animation title
+@keyframes title {
+  0% {
+    background-position: left 0px top 10px;
+  }
+  100% {
+    background-position: left 1000px top 10px;
   }
 }

@@ -1572,7 +1572,7 @@ h6,
 body {
   color: #000000;
   font-family: "Inter", sans-serif;
-  font-size: 16;
+  font-size: 16px;
 }
 
 .icon {
@@ -1618,6 +1618,11 @@ img {
   width: 100%;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -1652,7 +1657,14 @@ ul.navigatin__list {
   display: flex;
   height: 60px;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+.e-button--banner:hover {
+  background-color: #141414;
+  color: #E71DC6;
+}
+.e-button--banner:focus {
+  background-color: #000000;
+}
+@media (min-width: 768px) and (max-width: 830px) {
   .e-button--banner {
     height: 40px;
     padding: 0 5px;
@@ -1660,9 +1672,9 @@ ul.navigatin__list {
 }
 @media (max-width: 480px) {
   .e-button--banner {
-    height: 30px;
     padding: 0 10px;
     font-size: 16px;
+    height: 30px;
   }
 }
 .e-button__banner-text {
@@ -1672,8 +1684,8 @@ ul.navigatin__list {
 }
 @media (max-width: 480px) {
   .e-button__banner-text {
-    font-size: 12px;
     margin-right: 10px;
+    font-size: 10px;
   }
 }
 
@@ -1689,6 +1701,7 @@ input {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
   position: fixed;
+  z-index: 10;
   right: 0;
   left: 0;
   top: 0;
@@ -1715,21 +1728,21 @@ input {
 }
 @media (max-width: 768px) {
   .vad-header__burger {
-    z-index: 5;
-    display: block;
     position: relative;
-    width: 24px;
-    height: 14px;
-    cursor: pointer;
     margin-left: 20px;
+    cursor: pointer;
+    display: block;
+    height: 14px;
+    width: 24px;
+    z-index: 5;
   }
   .vad-header__burger span, .vad-header__burger::before, .vad-header__burger::after {
-    left: 0;
+    transition: all 0.3s ease 0s;
+    background-color: #000000;
     position: absolute;
     height: 10%;
     width: 100%;
-    transition: all 0.3s ease 0s;
-    background-color: #000000;
+    left: 0;
   }
   .vad-header__burger::before, .vad-header__burger::after {
     content: "";
@@ -1758,12 +1771,12 @@ input {
 }
 @media (max-width: 480px) {
   .vad-header__burger {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }
 .vad-header__btn {
-  margin-left: 5px;
   position: relative;
+  margin-left: 5px;
   z-index: 10;
 }
 .vad-header__btn:first-child {
@@ -1793,12 +1806,12 @@ input {
 
 @media (max-width: 768px) {
   .navigation {
+    background-color: rgba(86, 182, 187, 0.95);
     position: fixed;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: rgba(86, 182, 187, 0.95);
     padding: 120px 30px 30px 30px;
     transition: left 0.3s ease 0s;
     overflow: auto;
@@ -1916,8 +1929,8 @@ input {
 }
 @media (max-width: 1024px) {
   .nr-banner__image-block {
-    max-width: 360px;
-    min-width: 360px;
+    max-width: 385px;
+    min-width: 385px;
   }
 }
 @media (max-width: 768px) {
@@ -1970,8 +1983,17 @@ input {
   line-height: 76px;
   margin-top: 30px;
   font-weight: 700;
-  color: #000000;
   font-size: 64px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  background: #4B3F4D;
+  background: linear-gradient(90deg, #4B3F4D 0%, #1A2470 21%, #C9208D 65%, #4B3F4D 100%);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-background-clip: text;
+  animation-duration: 5s;
+  animation-name: title;
+  background-clip: text;
+  color: transparent;
 }
 @media (max-width: 1160px) {
   .nr-banner__title {
@@ -1983,7 +2005,7 @@ input {
   .nr-banner__title {
     margin-top: 10px;
     font-size: 38px;
-    line-height: 1;
+    line-height: 50px;
   }
 }
 @media (max-width: 480px) {
@@ -2155,6 +2177,33 @@ input {
 .nr-super-puper__svg {
   height: 150px;
   width: 150px;
+}
+
+.nr-timer {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation-name: time-circle;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes time-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes title {
+  0% {
+    background-position: left 0px top 10px;
+  }
+  100% {
+    background-position: left 1000px top 10px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
