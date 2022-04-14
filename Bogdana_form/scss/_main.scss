@@ -1,0 +1,82 @@
+@import "../../scss/index.scss";
+.bog-entry-page {
+  font-family: $f-Inter;
+  font-size: $fs-base + px;
+  padding: 300px 0;
+
+  &__wrapper {
+    max-width: 590px;
+    padding: 40px 50px;
+    background: #ffffff;
+    box-shadow: 16px 16px 16px 16px #3b12b43d;
+    border-radius: 16px;
+    margin: 0 auto;
+  }
+}
+
+.bog__header {
+  display: flex;
+  justify-content: center;
+
+  &__title {
+    font-size: $fs-subtitle + px;
+  }
+  &__logo {
+    font-family: $f-Lobster;
+  }
+  &__logo ::after {
+    content: ".";
+    color: #fd8061;
+  }
+}
+
+.bog-form {
+  &__field-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+  }
+
+  &__field-input:last-child {
+    margin-top: 0px;
+  }
+
+  &__label {
+    margin-bottom: 10px;
+  }
+  &__input {
+    padding: 0 10px;
+    height: 56px;
+  }
+  &__field-input__error {
+    color: #d82a2a;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+  &__field-input--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__checkbox-item {
+    display: flex;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+  &__button-wrapper {
+    margin: 15px auto 0 auto;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border: none;
+    font-size: $fs-subtitle + px;
+  }
+}

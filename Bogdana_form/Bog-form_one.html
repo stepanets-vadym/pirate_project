@@ -43,49 +43,95 @@
       </div>
     </div>
   </header>
-  <!-- Sign In -->
-  <container class="bogdana">
-    <form class="bog.form" action="" method="post">
-      <div class="bog.form__box">
-        <div class="bog.form__header">
-          <h1 class="bog.form__title">
-            Sign in to Foodieland.
-          </h1>
-        </div>
-        <div>
-          <label class="text-regular" for="email">
+  <!-- Entry page -->
+  <div class="container bog-entry-page">
+    <div class="bog-entry-page__wrapper">
+      <!-- Content -->
+      <div class="bog-entry-page__header bog__header">
+        <h1 class="bog__header__title">
+          Sign in to
+          <span class="bog__header__logo">
+            Foodieland
+            <span></span>
+          </span>
+          <!-- Dot  -->
+        </h1>
+      </div>
+      <!-- Form -->
+      <form id="js-form" class="bog-entry-page__form bog-form" method="get">
+        <!-- Email -->
+        <label class="bog-form__field-input">
+          <div class="bog-form__label" for="email">
             Your email
-          </label>
-          <input type="email" name="email" id="email" required>
-        </div>
-        <div>
-          <label class="text-regular" for="email">
-            Password
-          </label>
-          <div>
-            <a href="">Forgot your password?</a>
           </div>
-          <input type="password" name="password" id="password" required>
+          <input class="bog-form__input" type="text" name="email" id="email" placeholder="Your email">
+          <div id="js-error" class="bog-form__field-input__error">
+          </div>
+        </label>
+        <!-- Password -->
+        <div class="bog-form__field-input">
+          <label class="bog-form__label bog-form__field-input--flex " for="password">
+            <div>
+              Password
+            </div>
+            <div>
+              <a href="">Forgot your password?</a>
+            </div>
+          </label>
+          <input class="bog-form__input" type="password" name="password" id="password" placeholder="Your password">
         </div>
-        <div>
-          <input type="checkbox" name="" id="">
+
+
+        <!-- Checkbox -->
+        <div class="bog-form__checkbox-item">
+          <div>
+            <input type="checkbox" name="" id="">
+          </div>
           <div>
             Remember me on this device
           </div>
         </div>
-        <div>
-          <button class="signup-button btn" type="submit">
-            Sign in
+        <!-- Button -->
+        <div class="bog-form__button">
+          <button class=" bog-form__button-wrapper " type="submit">
+            <span>
+              Sign in
+            </span>
           </button>
         </div>
+        <!-- Registration link -->
         <div>
           Don't have an account?
           <a href="">Sign up</a>
         </div>
-      </div>
-    </form>
-  </container>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- <button class="btn btn-dark vad-header__btn features simptip-position-top simptip-success" type="button"
+            data-tooltip="yea boy"> <a class="vad-header__link" href="#" target="_blank"> Sign In</a></button> -->
+
+
   <script src="../index.js"></script>
+  <script>
+    const errorBlock = document.getElementById('js-error');
+    const form = document.getElementById('js-form');
+    const validEmail = 'pirate@gmail.com'
+    const validPass = 'pirate'
+    form.addEventListener('submit', (event) => {
+      event.preventDefault()
+      if (form.email.value !== validEmail || form.password.value !== validPass) {
+        errorBlock.innerText = 'User not found!'
+        return false
+      }
+      alert('Success')
+    })
+  </script>
 </body>
+
+
+
+
 
 </html>
