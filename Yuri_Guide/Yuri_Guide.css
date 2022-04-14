@@ -1666,7 +1666,7 @@ h6,
 body {
   color: #000000;
   font-family: "Inter", sans-serif;
-  font-size: 16;
+  font-size: 16px;
 }
 
 .icon {
@@ -2087,6 +2087,7 @@ img {
   font-weight: 600;
   line-height: 29px;
   letter-spacing: -1px;
+  text-align: justify;
 }
 
 .yur-articles__item:first-child {
@@ -2098,6 +2099,7 @@ img {
   line-height: 28px;
   opacity: 0.6;
   margin-top: 25px;
+  text-align: justify;
 }
 
 .yur-articles__image {
@@ -2136,6 +2138,9 @@ img {
 /* LINKS */
 .yur-content__links {
   margin-left: 30px;
+  height: fit-content;
+  position: sticky;
+  top: 150px;
 }
 
 @media (max-width: 767px) {
@@ -2165,6 +2170,8 @@ img {
 }
 @media (max-width: 767px) {
   .yur-links__icon {
+    width: 40px;
+    height: 40px;
     padding: 5px;
   }
 }
