@@ -1,5 +1,38 @@
+//- * EvgenFooter
+
 mixin EvgenFooter()
-  footer.Evg-footer 
-    .Evg-footer__wrapper.container
-      .Evg-footer__text
-      
+  //- Footer block
+  footer.evg-footer 
+    .evg-footer__wrapper.container
+      //- Logo-link block
+      .evg-footer__logo-link
+        //- Logo
+        .evg-footer__logo
+          .evg-footer__logo-fl
+            +logo( {text:"Foodieland"} ) 
+          .evg-footer__logo-text Lorem ipsum dolor sit amet, consectetuipisicing elit,
+        //- Link
+        .evg-footer__link
+          a(href="#").evg-footer__link-item
+            span.simptip-position-top(data-tooltip="Click on Recipes") Recipes
+          a(href="#").evg-footer__link-item
+            span.simptip-position-top(data-tooltip="Click on Blog") Blog
+          a(href="#").evg-footer__link-item
+            span.simptip-position-top(data-tooltip="Click on Contact") Contact
+          a(href="#").evg-footer__link-item 
+            span.simptip-position-top(data-tooltip="Click on About us") About us
+      hr.evg-footer-line     
+      //- Text-icon block
+      .evg-footer__text-icon
+        //- Text
+        .evg-footer__text © 2020 Flowbase. Powered by 
+          span.evg-footer__text-color Webflow
+        //- Icon
+        .evg-footer__icon
+          svg.icon-Facebook
+            use(xlink:href="#icon-Facebook")
+          svg.icon-twitter
+            use(xlink:href="#icon-twitter")
+          svg.icon-instagram
+            use(xlink:href="#icon-instagram")   
+  

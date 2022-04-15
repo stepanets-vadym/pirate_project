@@ -1477,6 +1477,7 @@ template {
   padding: 0;
   margin: 0;
   border: none;
+  border: 1px solid red;
 }
 
 *,
@@ -1569,7 +1570,7 @@ h6,
 body {
   color: #000000;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 16;
 }
 
 .icon {
@@ -1740,7 +1741,7 @@ input {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 24;
   font-family: "Lobster", cursive;
   position: relative;
   z-index: 10;
@@ -1820,6 +1821,98 @@ input {
   .list-item {
     margin-left: 40px;
   }
+}
+
+.evg-footer {
+  background-color: #E4E6F1;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-top: 100px;
+}
+
+.evg-footer__wrapper.container {
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: flex;
+  padding: 5px;
+}
+
+.evg-footer__logo-link {
+  justify-content: space-between;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: flex;
+  padding: 5px;
+}
+
+.evg-footer__logo-fl {
+  font-size: 24px;
+  padding: 5px;
+}
+
+.evg-footer__logo-text {
+  color: #00000099;
+  margin-top: 10px;
+}
+
+.evg-footer__link {
+  align-self: center;
+  padding: 5px;
+}
+
+.evg-footer__link-item {
+  margin-right: 60px;
+  color: #000000;
+  padding: 5px;
+}
+
+.evg-footer__link-item:last-child {
+  margin-right: 0px;
+}
+
+.evg-footer-line {
+  color: #00000099;
+}
+
+.evg-footer__text-icon {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.evg-footer__text {
+  align-self: center;
+  margin: auto;
+  font-size: 18px;
+  color: #00000099;
+}
+
+.evg-footer__text-color {
+  color: #FD8061;
+}
+
+.evg-footer__icon {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.icon-Facebook,
+.icon-twitter,
+.icon-instagram {
+  width: 32px;
+  height: 32px;
+  color: #000000;
+}
+
+.icon-Facebook,
+.icon-twitter {
+  margin-right: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */

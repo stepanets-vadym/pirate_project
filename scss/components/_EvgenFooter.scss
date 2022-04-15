@@ -1,0 +1,87 @@
+// EvgenFooter
+
+// Footer block
+.evg-footer {
+  background-color: $c-bg-footer;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-top: 100px;
+}
+.evg-footer__wrapper.container {
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: flex;
+  padding: 5px;
+}
+
+// Logo-link block
+.evg-footer__logo-link {
+  justify-content: space-between;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: flex;
+  padding: 5px;
+}
+.evg-footer__logo-fl {
+  font-size: 24px;
+  padding: 5px;
+}
+// Text
+.evg-footer__logo-text {
+  color: $c-text-footer;
+  margin-top: 10px;
+}
+// Link
+.evg-footer__link {
+  align-self: center;
+  padding: 5px;
+}
+.evg-footer__link-item{
+  margin-right: 60px;
+  color: $c-black;
+  padding: 5px;
+}
+.evg-footer__link-item:last-child {
+  margin-right: 0px;
+}
+.evg-footer-line {
+  color: $c-text-footer;
+}
+// Text-icon block
+.evg-footer__text-icon {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+// Text 
+.evg-footer__text {
+  align-self: center;
+  margin: auto;
+  font-size: $fs-text-footer;
+  color: $c-text-footer;
+}
+.evg-footer__text-color {
+  color: $c-orange;
+}
+// Icon
+.evg-footer__icon{
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 5px;
+}
+.icon-Facebook,
+.icon-twitter,
+.icon-instagram {
+  width: 32px;
+  height: 32px;
+  color: $c-black;
+}
+.icon-Facebook,
+.icon-twitter{
+  margin-right: 30px;
+}
