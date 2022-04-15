@@ -11,47 +11,6 @@
     <title>Foodieland</title>
   </head>
   <body>
-    <header class="vad-header">
-      <div class="container vad-header__wrapper">
-        <div class="logo"><a href="#">Foodieland</a></div>
-        <div class="vad-header__block">
-          <div class="vad-header__burger"><span></span></div>
-          <div class="vad-header__navigation">
-            <nav class="navigation">
-              <ul class="navigation__list">
-                <li class="list-item"><a class="e-link navigation__link" href="#home">HOME</a></li>
-                <li class="list-item">
-                  <a class="e-link navigation__link" href="#about">ABOUT</a>
-                </li>
-                <li class="list-item">
-                  <a class="e-link navigation__link" href="#works">WORKS</a>
-                </li>
-                <li class="list-item"><a class="e-link navigation__link" href="#blog">BLOG</a></li>
-                <li class="list-item">
-                  <a class="e-link navigation__link" href="#contact">CONTACT</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="vad-header__button-block">
-            <button
-              class="btn btn-dark vad-header__btn features simptip-position-top simptip-success"
-              type="button"
-              data-tooltip="yea boy"
-            >
-              <a class="vad-header__link" href="#" target="_blank"> Sign In</a>
-            </button>
-            <button
-              class="btn btn-dark vad-header__btn features simptip-position-top simptip-info"
-              type="button"
-              data-tooltip="oy eah"
-            >
-              <a class="vad-header__link" href="#" target="_blank"> Sign Up</a>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
     <!-- SVG -->
     <svg
       aria-hidden="true"
@@ -110,118 +69,182 @@
         </symbol>
       </defs>
     </svg>
-    <!-- CONTAINER -->
-    <div class="container">
-      <!-- TITLE -->
-      <div class="title">
-        <h1 class="title__name">Full Guide to Becoming a Professional Chef</h1>
-        <div class="author">
-          <div class="author__photo">
-            <img src="./image/author.png" alt="photo" />
+    <header class="vad-header">
+      <div class="container vad-header__wrapper">
+        <div class="logo"><a href="#">Foodieland</a></div>
+        <div class="vad-header__block">
+          <div class="vad-header__burger"><span></span></div>
+          <div class="vad-header__navigation">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="list-item"><a class="e-link navigation__link" href="#home">HOME</a></li>
+                <li class="list-item">
+                  <a class="e-link navigation__link" href="#about">ABOUT</a>
+                </li>
+                <li class="list-item">
+                  <a class="e-link navigation__link" href="#works">WORKS</a>
+                </li>
+                <li class="list-item"><a class="e-link navigation__link" href="#blog">BLOG</a></li>
+                <li class="list-item">
+                  <a class="e-link navigation__link" href="#contact">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <span class="author__name">John Smith</span>
-          <span>|</span>
-          <span class="author__date">15 March 2022</span>
-        </div>
-        <div class="title__text">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
-            Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In feugiat
-            vestibulum velit vel pulvinar.
-          </p>
-        </div>
-        <div class="title__image">
-          <img class="image" src="./image/title-photo.png" alt="chef" />
+          <div class="vad-header__button-block">
+            <button
+              class="btn btn-dark vad-header__btn features simptip-position-top simptip-success"
+              type="button"
+              data-tooltip="yea boy"
+            >
+              <a class="vad-header__link" href="#" target="_blank"> Sign In</a>
+            </button>
+            <button
+              class="btn btn-dark vad-header__btn features simptip-position-top simptip-info"
+              type="button"
+              data-tooltip="oy eah"
+            >
+              <a class="vad-header__link" href="#" target="_blank"> Sign Up</a>
+            </button>
+          </div>
         </div>
       </div>
+    </header>
+    <!-- WRAPPER -->
+    <div class="wrapper">
+      <!-- BANNER -->
+      <section class="yur-banner">
+        <div class="container yur-banner__container">
+          <h1 class="yur-banner__title">Full Guide to Becoming a Professional Chef</h1>
+          <div class="yur-author">
+            <div class="yur-author__photo">
+              <img src="../assets/img/yur-author__photo.png" alt="photo" />
+            </div>
+            <span class="yur-author__name">John Smith</span>
+            <span>|</span>
+            <span class="yur-author__date">15 March 2022</span>
+          </div>
+          <div class="yur-banner__text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+              Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In
+              feugiat vestibulum velit vel pulvinar.
+            </p>
+          </div>
+          <div class="yur-banner__image">
+            <img class="yur-image" src="../assets/img/yur-banner__image.png" alt="chef" />
+          </div>
+        </div>
+      </section>
       <!-- CONTENT -->
-      <div class="content">
-        <!-- ARTICLES -->
-        <div class="articles">
-          <section class="articles__item">
-            <h2 class="articles__title">How did you start out in the food industry?</h2>
-            <p class="articles__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
-              Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In
-              feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat elementum
-              ex ut suscipit.
-            </p>
-          </section>
-          <section class="articles__item">
-            <h2 class="articles__title">What do you like most about your job?</h2>
-            <p class="articles__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
-              Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In
-              feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat elementum
-              ex ut suscipit.
-            </p>
-          </section>
-          <section class="articles__item">
-            <h2 class="articles__title">Do you cook at home on your days off?</h2>
-            <div class="articles__image">
-              <img class="articles__photo" src="./image/articles-image.png" alt="" />
-            </div>
-            <p class="articles__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
-              Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In
-              feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat elementum
-              ex ut suscipit.
-            </p>
-          </section>
-          <section class="articles__item">
-            <h2 class="articles__title">
-              What would your advice be to young people looking to get their foot in the door?
-            </h2>
-            <p class="articles__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
-              Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In
-              feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat elementum
-              ex ut suscipit.
-            </p>
-          </section>
-          <!-- QUOTE -->
-          <article>
-            <blockquote>
-              <p>
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices
-                odio.”
+      <section class="yur-content">
+        <div class="container yur-content__container">
+          <!-- ARTICLES -->
+          <div class="yur-content__articles yur-articles">
+            <section class="yur-articles__item">
+              <h2 class="yur-articles__title">How did you start out in the food industry?</h2>
+              <p class="yur-articles__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In
+                feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat
+                elementum ex ut suscipit.
               </p>
-            </blockquote>
-          </article>
-          <section class="articles__item">
-            <h2 class="articles__title">
-              What is the biggest misconception that people have about being a professional chef?
-            </h2>
-            <p class="articles__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
-              Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In
-              feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat elementum
-              ex ut suscipit.
-            </p>
-          </section>
+            </section>
+            <section class="yur-articles__item">
+              <h2 class="yur-articles__title">What do you like most about your job?</h2>
+              <p class="yur-articles__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In
+                feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat
+                elementum ex ut suscipit.
+              </p>
+            </section>
+            <section class="yur-articles__item">
+              <h2 class="yur-articles__title">Do you cook at home on your days off?</h2>
+              <div class="yur-articles__image">
+                <img
+                  class="yur-articles__photo"
+                  src="../assets/img/yur-articles__photo.png"
+                  alt=""
+                />
+              </div>
+              <p class="yur-articles__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In
+                feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat
+                elementum ex ut suscipit.
+              </p>
+            </section>
+            <section class="yur-articles__item">
+              <h2 class="yur-articles__title">
+                What would your advice be to young people looking to get their foot in the door?
+              </h2>
+              <p class="yur-articles__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In
+                feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat
+                elementum ex ut suscipit.
+              </p>
+            </section>
+            <!-- QUOTE -->
+            <article class="yur-quote">
+              <blockquote class="yur-quote__text">
+                <p>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices
+                  odio.”
+                </p>
+              </blockquote>
+            </article>
+            <section class="yur-articles__item">
+              <h2 class="yur-articles__title">
+                What is the biggest misconception that people have about being a professional chef?
+              </h2>
+              <p class="yur-articles__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In
+                feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat
+                elementum ex ut suscipit.
+              </p>
+            </section>
+          </div>
+          <!-- LINKS -->
+          <div class="yur-content__links yur-links">
+            <h3 class="yur-links__title">SHARE THIS ON:</h3>
+            <aside class="yur-links__list">
+              <a
+                class="yur-links__link simptip-position-right"
+                data-tooltip="Facebook"
+                href="https://www.facebook.com/"
+                target="_blanck"
+              >
+                <svg class="icon yur-links__icon">
+                  <use xlink:href="#icon-Facebook"></use>
+                </svg>
+              </a>
+              <a
+                class="yur-links__link simptip-position-right"
+                data-tooltip="Twitter"
+                href="https://www.twitter.com/"
+                target="_blanck"
+              >
+                <svg class="icon yur-links__icon">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+              <a
+                class="yur-links__link simptip-position-right"
+                data-tooltip="Instagram"
+                href="https://www.instagram.com/"
+                target="_blanck"
+              >
+                <svg class="icon yur-links__icon">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+              </a>
+            </aside>
+          </div>
         </div>
-        <!-- LINKS -->
-        <div class="links">
-          <aside class="share">
-            <h3 class="share__title">SHARE THIS ON:</h3>
-            <div class="share__icon">
-              <a href="https://www.facebook.com/" target="_blanck">
-                <svg class="icon icon-Facebook"><use xlink:href="#icon-Facebook"></use></svg>
-              </a>
-            </div>
-            <div class="share__icon">
-              <a href="https://www.twitter.com/" target="_blanck">
-                <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-              </a>
-            </div>
-            <div class="share__icon">
-              <a href="https://www.instagram.com/" target="_blanck">
-                <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
-              </a>
-            </div>
-          </aside>
-        </div>
-      </div>
+      </section>
     </div>
     <script src="../index.js"></script>
   </body>
