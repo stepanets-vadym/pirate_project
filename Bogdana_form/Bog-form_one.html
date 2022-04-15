@@ -50,12 +50,10 @@
       <div class="bog-entry-page__header bog__header">
         <h1 class="bog__header__title">
           Sign in to
-          <span class="bog__header__logo">
-            Foodieland
-            <span></span>
-          </span>
-          <!-- Dot  -->
         </h1>
+        <div class="logo bog__header__logo">
+          <a href="#">Foodieland</a>
+        </div>
       </div>
       <!-- Form -->
       <form id="js-form" class="bog-entry-page__form bog-form" method="get">
@@ -80,37 +78,35 @@
           </label>
           <input class="bog-form__input" type="password" name="password" id="password" placeholder="Your password">
         </div>
-
-
         <!-- Checkbox -->
-        <div class="bog-form__checkbox-item">
-          <div>
-            <input type="checkbox" name="" id="">
-          </div>
-          <div>
+        <div class=" bog-form__checkbox">
+          <label class="bog-form__checkbox__label ">
+            <input type="checkbox">
+            <span class="bog-form__checkbox__switch"></span>
+          </label>
+          <div class="bog-checkbox__text">
             Remember me on this device
           </div>
         </div>
         <!-- Button -->
         <div class="bog-form__button">
           <button class=" bog-form__button-wrapper " type="submit">
-            <span>
+            <div>
               Sign in
-            </span>
+            </div>
           </button>
         </div>
         <!-- Registration link -->
-        <div>
-          Don't have an account?
+        <div class="bog-form__registration-link">
+          <div>
+            Don't have an account?
+          </div>
           <a href="">Sign up</a>
         </div>
       </form>
     </div>
   </div>
 
-
-  <!-- <button class="btn btn-dark vad-header__btn features simptip-position-top simptip-success" type="button"
-            data-tooltip="yea boy"> <a class="vad-header__link" href="#" target="_blank"> Sign In</a></button> -->
 
 
   <script src="../index.js"></script>
@@ -122,7 +118,7 @@
     form.addEventListener('submit', (event) => {
       event.preventDefault()
       if (form.email.value !== validEmail || form.password.value !== validPass) {
-        errorBlock.innerText = 'User not found!'
+        errorBlock.innerText = 'The password or email is incorrect!'
         return false
       }
       alert('Success')

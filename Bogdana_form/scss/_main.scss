@@ -1,82 +1,152 @@
 @import "../../scss/index.scss";
 .bog-entry-page {
-  font-family: $f-Inter;
   font-size: $fs-base + px;
-  padding: 300px 0;
+  font-family: $f-Inter;
+  padding: 200px 0;
+  @include media("<=tablet") {
+    padding: 150px 0;
+  }
 
   &__wrapper {
-    max-width: 590px;
-    padding: 40px 50px;
-    background: #ffffff;
-    box-shadow: 16px 16px 16px 16px #3b12b43d;
+    box-shadow: 0px 0px 20px 3px #0000003d;
+    background: $c-white;
     border-radius: 16px;
+    padding: 20px 30px;
+    max-width: 590px;
     margin: 0 auto;
   }
-}
-
-.bog__header {
-  display: flex;
-  justify-content: center;
-
-  &__title {
-    font-size: $fs-subtitle + px;
+  @include media("<=tablet") {
+    width: 420px;
   }
+}
+// Content
+.bog__header {
+  font-size: $fs-subtitle + px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   &__logo {
     font-family: $f-Lobster;
   }
-  &__logo ::after {
-    content: ".";
-    color: #fd8061;
-  }
 }
-
+// Form
+// Input
 .bog-form {
   &__field-input {
-    display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 20px;
+    display: flex;
   }
 
-  &__field-input:last-child {
-    margin-top: 0px;
+  &__field-input:first-child {
+    margin-top: 30px;
   }
 
   &__label {
     margin-bottom: 10px;
   }
   &__input {
+    border-radius: 4px;
     padding: 0 10px;
-    height: 56px;
+    height: 50px;
+    width: 100%;
   }
+  &__input:hover {
+    background-color: #0000003d;
+    color: $c-black;
+  }
+
+  &__input:focus {
+    box-shadow: 0px 0px 20px 3px #0000003d;
+    border: 1px solid $c-black;
+  }
+  &__input::selection {
+    background-color: $c-gray;
+  }
+
   &__field-input__error {
-    color: #d82a2a;
     position: absolute;
+    color: #d82a2a;
     bottom: 5px;
-    right: 5px;
+    right: 0px;
   }
   &__field-input--flex {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-  }
-
-  &__checkbox-item {
     display: flex;
   }
+  // Checkbox
+  &__checkbox {
+    align-items: center;
+    display: flex;
+    &__label {
+      margin-right: 10px;
+    }
+    &__label &__switch {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 25%/50%;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      background: #eee;
+      transition: 0.2s;
+      height: 28px;
+      width: 56px;
+    }
+    &__label &__switch::before {
+      content: "";
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+      display: inline-block;
+      position: absolute;
+      border-radius: 50%;
+      background: white;
+      transition: 0.15s;
+      height: 24px;
+      width: 24px;
+      left: 1px;
+      top: 1px;
+    }
+    &__label input[type="checkbox"] {
+      position: absolute;
+      display: block;
+      z-index: -1;
+      height: 0;
+      width: 0;
+    }
+    &__label input[type="checkbox"]:checked + &__switch {
+      background: rgba(1, 1, 1);
+    }
+    &__label input[type="checkbox"]:checked + &__switch::before {
+      transform: translateX(28px);
+    }
+    &__text {
+      display: flex;
+      align-items: center;
+    }
+  }
+  // Button
   &__button {
-    display: flex;
     justify-content: center;
+    font-size: $fs-base + px;
+    margin-top: 15px;
+    display: flex;
+    height: 50px;
   }
   &__button-wrapper {
-    margin: 15px auto 0 auto;
-    background-color: black;
-    color: #ffffff;
+    background-color: $c-black;
+    color: $c-white;
     border-radius: 5px;
     padding: 5px 20px;
     cursor: pointer;
     border: none;
-    font-size: $fs-subtitle + px;
+    width: 530px;
+  }
+  // Registration-link
+  &__registration-link {
+    justify-content: center;
+    margin-top: 20px;
+    display: flex;
   }
 }
