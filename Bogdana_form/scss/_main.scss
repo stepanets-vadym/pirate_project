@@ -18,6 +18,10 @@
   @include media("<=tablet") {
     width: 420px;
   }
+  @include media("<=phone") {
+    padding: 5px 8px;
+    width: 300px;
+  }
 }
 // Content
 .bog__header {
@@ -39,7 +43,11 @@
   }
 
   &__field-input:first-child {
-    margin-top: 30px;
+    margin-top: 10px;
+  }
+  @include media("<=phone") {
+    padding: 5px 8px;
+    width: 300px;
   }
 
   &__label {
