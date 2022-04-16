@@ -2586,9 +2586,8 @@ input {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
-  margin-bottom: 20px;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1400px) {
   .Les-recipe__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2602,64 +2601,116 @@ input {
   }
 }
 
-.Les-card {
+.Les {
+  position: relative;
+  width: 290px;
+  height: 330px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: 0.7s linear;
+  -moz-transition: 0.7s linear;
+  -o-transition: 0.7s linear;
+  transition: 0.7s linear;
+}
+.Les__card {
   display: block;
   width: 290px;
+  padding-bottom: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  background: white;
 }
-@media (max-width: 1365px) {
-  .Les-card {
+@media (max-width: 1400px) {
+  .Les__card {
     margin: 0 auto;
-    width: 400px;
+    width: 450px;
   }
 }
-@media (max-width: 956px) {
-  .Les-card {
+@media (max-width: 1024px) {
+  .Les__card {
     margin: 0 auto;
     width: 290px;
   }
 }
-.Les-card__photo {
+.Les__card__photo {
   display: block;
   width: 100%;
   position: relative;
 }
-.Les-card__photo__img {
+.Les__card__photo__img {
   border-radius: 20px;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 16px;
 }
-.Les-card__photo__heart {
+.Les__card__photo__heart {
   display: block;
 }
-.Les-card__link {
+.Les__card__link {
   display: block;
   max-width: 290px;
 }
-.Les-card__link__text {
+.Les__card__link__text {
   color: black;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
 }
-.Les-card__link__text:hover {
+.Les__card__link__text:hover {
   color: black;
   text-shadow: 1px 1px 2px #357355;
 }
-.Les-card__specifics {
+.Les__card__specifics {
   display: flex;
   justify-content: space-around;
   margin-top: 22px;
   width: 230px;
 }
-.Les-card__specifics__icon {
+.Les__card__specifics__icon {
   display: flex;
   justify-content: center;
 }
-.Les-card__specifics__text {
+.Les__card__specifics__text {
   font-family: inter;
   font-style: 14px;
   color: #357355;
+}
+.Les__2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+.Les__2__img {
+  border: none;
+}
+.Les:hover, .Les .Les__card__2 {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  border-radius: 20px;
 }
 
 .Lcheck {

@@ -1,66 +1,192 @@
 // карточки
-.Les-card {
-  display: block;
+.Les{
+  position: relative;
   width: 290px;
+	height: 330px;
+  
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: .7s linear;
+  -moz-transition: .7s linear;
+  -o-transition: .7s linear;
+  transition: .7s linear;  
 
-    @media (max-width: 1365px) {
-      margin: 0 auto;
-      width: 400px;
-    }
-    @media (max-width: 956px) {
-      margin: 0 auto;
-      width: 290px;
-    }
-// блок з фото
-  &__photo {
+  &__card {
     display: block;
+    width: 290px;
+    padding-bottom: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    position: relative;
-    // фото
-    &__img {
-      border-radius: 20px;
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 16px;
-    }
-    &__heart{
-      display: block;
-    }
-  }
-  // ссилка з текстом
-  &__link {
-    display: block;
-    max-width: 290px;
-    //  ссилка
-    &__text {
-      color: $c-black;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.5;
-      // зелена тіль при наведенні
-      &:hover {
-        color: $c-black;
-        text-shadow: 1px 1px 2px $c-menthol;
-      }
-    }
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background: $c-white;
     
-  }
+
 
   
-  &__specifics {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 22px;
-    width: 230px;
-
-    &__icon {
-      display: flex;
-      justify-content: center;
+      @media (max-width: 1400px) {
+        margin: 0 auto;
+        width: 450px;
+      }
+      @media (max-width: 1024px) {
+        margin: 0 auto;
+        width: 290px;
+      }
+  // блок з фото
+    &__photo {
+      display: block;
+      width: 100%;
+      position: relative;
+      // фото
+      &__img {
+        border-radius: 20px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 16px;
+      }
+      &__heart{
+        display: block;
+      }
     }
-    &__text {
-      font-family: inter;
-      font-style: 14px;
-      color: $c-menthol;
+    // ссилка з текстом
+    &__link {
+      display: block;
+      max-width: 290px;
+      //  ссилка
+      &__text {
+        color: $c-black;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.5;
+        // зелена тінь при наведенні
+        &:hover {
+          color: $c-black;
+          text-shadow: 1px 1px 2px $c-menthol;
+        }
+      }
+      
+    }
+  
+    
+    &__specifics {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 22px;
+      width: 230px;
+  
+      &__icon {
+        display: flex;
+        justify-content: center;
+      }
+      &__text {
+        font-family: inter;
+        font-style: 14px;
+        color: $c-menthol;
+      }
     }
   }
+  &__2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+
+    &__img{
+      border: none;
+    }
+  }
+  &:hover, .Les__card__2{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    border-radius: 20px;
+  }
 }
+
+
+// .Les-card{
+//   position: relative;
+//   width: 290px;
+// 	height: 330px;
+  
+//   -webkit-transform-style: preserve-3d;
+//   -moz-transform-style: preserve-3d;
+//   transform-style: preserve-3d;
+//   -webkit-transition: .7s linear;
+//   -moz-transition: .7s linear;
+//   -o-transition: .7s linear;
+//   transition: .7s linear;  
+
+//   &__1{
+  
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+  
+//   width: 100%;
+//   height: 100%;
+//   -webkit-backface-visibility: hidden;
+//   -moz-backface-visibility: hidden;
+//   backface-visibility: hidden;
+//   z-index: 2;
+//   -webkit-transform: rotateY(0deg);
+//   -moz-transform: rotateY(0deg);
+//   -ms-transform: rotateY(0deg);
+//   transform: rotateY(0deg);
+//   background: white;
+//   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  
+//   }
+  
+
+//   &__2{
+    
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+    
+//     width: 100%;
+//     height: 100%;
+//     -webkit-backface-visibility: hidden;
+//     -moz-backface-visibility: hidden;
+//     backface-visibility: hidden;
+//     -webkit-transform: rotateY(-180deg);
+//   -moz-transform: rotateY(-180deg);
+//   -ms-transform: rotateY(-180deg);
+//   transform: rotateY(-180deg);
+  
+  
+//   }
+//   &:hover{
+//     -webkit-transform: rotateY(180deg);
+//   -moz-transform: rotateY(180deg);
+//   -ms-transform: rotateY(180deg);
+//   transform: rotateY(180deg);
+//   }
+// }
+
+
+
+
