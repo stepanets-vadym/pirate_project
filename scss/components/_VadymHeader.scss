@@ -8,6 +8,7 @@
   top: 0;
   &__wrapper {
     justify-content: space-between;
+    transition: $t-normal;
     padding-bottom: 40px;
     align-items: center;
     padding-top: 40px;

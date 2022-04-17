@@ -1705,6 +1705,7 @@ input {
 }
 .vad-header__wrapper {
   justify-content: space-between;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   padding-bottom: 40px;
   align-items: center;
   padding-top: 40px;

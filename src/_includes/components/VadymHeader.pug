@@ -1,6 +1,6 @@
 mixin VadymHeader()
   header.vad-header
-    .container.vad-header__wrapper
+    .container.vad-header__wrapper#header
       +logo( {text:"Foodieland"} )
       .vad-header__block
         .vad-header__burger
@@ -9,7 +9,7 @@ mixin VadymHeader()
           +navigation()
             +listItem("./index.html","HOME", classes="navigation__link")
             +listItem("#about","ABOUT", classes="navigation__link")
-            +listItem("#works","WORKS", classes="navigation__link")
+            +listItem("./Yuri_Guide/Yuri_Guide.html","GUIDE", classes="navigation__link")
             +listItem("#blog","BLOG", classes="navigation__link")
             +listItem("#contact","CONTACT", classes="navigation__link")
         .vad-header__button-block
