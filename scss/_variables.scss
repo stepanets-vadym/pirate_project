@@ -1,26 +1,28 @@
 // COLORS
 $c-black: #000000;
-$c-gray: #7B7B7B;
-$c-orange: #FD8061;
-$c-white: #FFFFFF;
+$c-gray: #7b7b7b;
+$c-orange: #fd8061;
+$c-white: #ffffff;
 $c-text-gray: #565656;
-$c-footer: #F4F4F4;
+$c-footer: #f4f4f4;
+$c-item-gr: #e7f9fd00, #e7f9fd;
+$c-iconHeart-gray: #dbe2e5;
 
 // Font
-$f-Inter: 'Inter', sans-serif;
-$f-Lobster: 'Lobster', cursive;
+$f-Inter: "Inter", sans-serif;
+$f-Lobster: "Lobster", cursive;
 
 // Font size
 $fs-base: 16;
 $fs-h1: 64;
 $fs-h2: 48;
-$fs-subtitle:24;
+$fs-subtitle: 24;
 
 // Letter spacing
 $ls-base: 2;
 
 // Transition
-$t-normal: .35s cubic-bezier(.4,0,.2,1);
+$t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 
 // Box Shadow
-$bs-normal: 3px 4px 7px rgba($c-black, .1);
+$bs-normal: 3px 4px 7px rgba($c-black, 0.1);
