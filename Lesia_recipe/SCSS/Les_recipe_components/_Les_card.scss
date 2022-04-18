@@ -1,0 +1,73 @@
+// карточки
+.L__card {
+  display: block;
+  width: 290px;
+  padding-bottom: 20px;
+  background-color: white;
+  position: relative;
+
+  @media (max-width: 1400px) {
+    margin: 0 auto;
+    width: 450px;
+
+    background: $c-white;
+  }
+  @media (max-width: 1024px) {
+    margin: 0 auto;
+    width: 290px;
+  }
+  // блок з фото
+  &__photo {
+    display: block;
+    width: 100%;
+
+    // фото
+    &__img {
+      border-radius: 20px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 16px;
+    }
+    &__heart {
+      display: block;
+    }
+  }
+  // ссилка з текстом
+  &__link {
+    display: block;
+    max-width: 290px;
+    //  ссилка
+    &__text {
+      color: $c-black;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.5;
+      // зелена тінь при наведенні
+      &:hover {
+        color: $c-black;
+        text-shadow: 1px 1px 2px $c-menthol;
+      }
+    }
+  }
+
+  &__specifics {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 22px;
+    width: 230px;
+
+    &__icon {
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+    }
+    &__text {
+      font-family: inter;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $c-menthol;
+    }
+  }
+}
