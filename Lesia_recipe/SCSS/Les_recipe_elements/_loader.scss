@@ -4,10 +4,11 @@
   left: 50%;
   transform: translate(-50% -50%);
   &__title {
+    font-size: 200px;
     text-transform: uppercase;
     background-image: url(./Lassets/L_img/water.jpg);
     background-repeat: repeat-x;
-    -webkit-background-clip:text;
+    background-clip: content-box;
     animation: animate 15s linear infinite;
   }
 }
