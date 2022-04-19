@@ -1581,7 +1581,6 @@ template {
   padding: 0;
   margin: 0;
   border: none;
-  border: 1px solid red;
 }
 
 *,
@@ -1957,17 +1956,15 @@ input {
   }
 }
 .evg-footer {
-  background-color: #E4E6F1;
+  background-color: #FFFFFF;
   width: 100%;
   bottom: 0;
   left: 0;
   margin-top: 100px;
 }
 
-.evg-footer__wrapper.container {
+.evg-footer__wrapper {
   flex-direction: column;
-  margin-right: 20px;
-  margin-left: 20px;
   display: flex;
   padding: 5px;
 }
@@ -1980,38 +1977,120 @@ input {
   padding: 5px;
 }
 
-.evg-footer__logo-fl {
-  font-size: 24px;
+.evg-footer__logo {
   padding: 5px;
 }
 
+.evg-footer__logo-foodieland {
+  font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+  .evg-footer__logo-foodieland {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-footer__logo-foodieland {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__logo-foodieland {
+    font-size: 12px;
+  }
+}
 .evg-footer__logo-text {
   color: rgba(0, 0, 0, 0.6);
   margin-top: 10px;
+  padding: 5px;
 }
 
+@media (max-width: 1024px) {
+  .evg-footer__logo-text {
+    margin-top: 5px;
+    font-size: 14px;
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-footer__logo-text {
+    margin-top: 0;
+    font-size: 10px;
+    width: 160px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__logo-text {
+    font-size: 8px;
+  }
+}
 .evg-footer__link {
   align-self: center;
   padding: 5px;
 }
 
+@media (max-width: 768px) {
+  .evg-footer__link {
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__link {
+    width: 50px;
+  }
+}
 .evg-footer__link-item {
   margin-right: 60px;
   color: #000000;
   padding: 5px;
 }
 
+@media (max-width: 1024px) {
+  .evg-footer__link-item {
+    margin-right: 13px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-footer__link-item {
+    margin-right: 0;
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__link-item {
+    font-size: 8px;
+  }
+}
 .evg-footer__link-item:last-child {
   margin-right: 0px;
 }
 
-.evg-footer-line {
+.evg-footer__line {
   color: rgba(0, 0, 0, 0.6);
 }
 
+@media (max-width: 1024px) {
+  .evg-footer__line {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-footer__line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__line {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+}
 .evg-footer__text-icon {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   padding: 5px;
   margin-left: 5px;
@@ -2025,23 +2104,72 @@ input {
   color: rgba(0, 0, 0, 0.6);
 }
 
+@media (max-width: 1024px) {
+  .evg-footer__text {
+    font-size: 14px;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .evg-footer__text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__text {
+    font-size: 8px;
+  }
+}
+.evg-footer__text-color {
+  color: #FD8061;
+}
+
 .evg-footer__icon {
   margin-right: 5px;
   margin-left: 5px;
   padding: 5px;
 }
 
-.icon-Facebook,
-.icon-twitter,
-.icon-instagram {
+.evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
   width: 32px;
   height: 32px;
-  color: #000000;
 }
 
-.icon-Facebook,
-.icon-twitter {
+@media (max-width: 1024px) {
+  .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
+    width: 23px;
+    height: 23px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
+    width: 10px;
+    height: 10px;
+  }
+}
+.evg-footer__icon-Facebook, .evg-footer__icon-twitter {
   margin-right: 30px;
 }
 
+@media (max-width: 1024px) {
+  .evg-footer__icon-Facebook, .evg-footer__icon-twitter {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-footer__icon-Facebook, .evg-footer__icon-twitter {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__icon-Facebook, .evg-footer__icon-twitter {
+    margin-right: 5px;
+  }
+}
 /*# sourceMappingURL=index.css.map *//*# sourceMappingURL=Les_recipe.css.map */
