@@ -56,7 +56,7 @@
   &__title {
     margin-bottom: 10px;
     text-align: center;
-    font-size: $fs-h2;
+    font-size: $fs-h2 + px;
 
     // Media
     @include media("<=desktop") {
