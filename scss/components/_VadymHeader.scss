@@ -1,13 +1,14 @@
 .vad-header {
-  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+  border-bottom: 1px solid rgba($c-black, 0.2);
   background-color: $c-white;
   position: fixed;
-  z-index: 10;
+  z-index: 50;
   right: 0;
   left: 0;
   top: 0;
   &__wrapper {
     justify-content: space-between;
+    transition: $t-normal;
     padding-bottom: 40px;
     align-items: center;
     padding-top: 40px;
