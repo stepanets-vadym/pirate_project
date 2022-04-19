@@ -1964,36 +1964,35 @@ input {
     margin-left: 40px;
   }
 }
-.evg-subscribe__wrapper.container {
+.evg-subscribe__wrapper {
   background-color: #E7F9FD;
   flex-direction: column;
   border-radius: 60px;
   margin-bottom: 50px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 200px;
+  position: relative;
   overflow: hidden;
   display: flex;
-  padding: 0;
+  padding: 5px;
 }
 
 @media (max-width: 1024px) {
-  .evg-subscribe__wrapper.container {
+  .evg-subscribe__wrapper {
     border-radius: 45px;
   }
 }
 @media (max-width: 768px) {
-  .evg-subscribe__wrapper.container {
+  .evg-subscribe__wrapper {
     border-radius: 30px;
   }
 }
 @media (max-width: 480px) {
-  .evg-subscribe__wrapper.container {
-    border-radius: 14px;
+  .evg-subscribe__wrapper {
+    border-radius: 15px;
   }
 }
 .evg-subscribe__block-text {
   flex-direction: column;
+  margin-bottom: 50px;
   align-self: center;
   margin-right: 10px;
   margin-left: 10px;
@@ -2005,16 +2004,19 @@ input {
 
 @media (max-width: 1024px) {
   .evg-subscribe__block-text {
+    margin-bottom: 30px;
     margin-top: 6px;
   }
 }
 @media (max-width: 768px) {
   .evg-subscribe__block-text {
+    margin-bottom: 20px;
     margin-top: 4px;
   }
 }
 @media (max-width: 480px) {
   .evg-subscribe__block-text {
+    margin-bottom: 10px;
     margin-top: 0;
   }
 }
@@ -2067,85 +2069,119 @@ input {
     font-size: 10px;
   }
 }
-.evg-subscribe__block-img-btn {
-  justify-content: space-between;
-  display: flex;
-}
-
-.evg-subscribe__img-salad, .Evg-subscribe__img-salad-egg {
-  align-self: flex-end;
-}
-
 .evg-subscribe__img-salad {
-  margin-right: 5px;
-}
-
-.evg-subscribe__img-salad-egg {
-  margin-left: 5px;
-}
-
-.evg-subscribe__inp-btn {
-  background-color: #FFFFFF;
-  border-radius: 24px;
-  align-self: center;
-  margin-right: 5px;
-  margin-left: 5px;
-  padding: 10px;
-  display: flex;
-  height: 80px;
-  width: 480px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
 }
 
 @media (max-width: 1024px) {
-  .evg-subscribe__inp-btn {
-    border-radius: 20px;
-    padding: 7px;
-    height: 60px;
-    width: 450px;
+  .evg-subscribe__img-salad {
+    width: 290px;
   }
 }
 @media (max-width: 768px) {
-  .evg-subscribe__inp-btn {
-    border-radius: 14px;
-    padding: 5px;
-    height: 40px;
-    width: 420px;
+  .evg-subscribe__img-salad {
+    width: 170px;
   }
 }
 @media (max-width: 480px) {
-  .evg-subscribe__inp-btn {
-    border-radius: 6px;
-    padding: 2px;
-    height: 25px;
-    width: 400px;
+  .evg-subscribe__img-salad {
+    width: 105px;
   }
 }
-.evg-subscribe__inp {
+.evg-subscribe__img-salad-egg {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 1024px) {
+  .evg-subscribe__img-salad-egg {
+    width: 280px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__img-salad-egg {
+    width: 170px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__img-salad-egg {
+    width: 115px;
+  }
+}
+.evg-subscribe__input-button {
+  margin-bottom: 85px;
+  margin-right: 10px;
+  align-self: center;
+  position: relative;
+  margin-left: 10px;
+  display: flex;
+  width: 490px;
+  padding: 5px;
+  height: 90px;
+  z-index: 5;
+}
+
+@media (max-width: 1024px) {
+  .evg-subscribe__input-button {
+    margin-bottom: 80px;
+    height: 75px;
+    width: 430px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-subscribe__input-button {
+    margin-bottom: 40px;
+    height: 60px;
+    width: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-subscribe__input-button {
+    margin-bottom: 20px;
+    height: 35px;
+    width: 150px;
+  }
+}
+.evg-subscribe__input {
   font-size: 14px;
+  background-color: #FFFFFF;
   color: rgba(0, 0, 0, 0.4);
-  padding-right: 10px;
-  padding-left: 5px;
+  padding-right: 145px;
+  border-radius: 24px;
+  padding-left: 10px;
   height: 100%;
   border: none;
   width: 100%;
 }
 
 @media (max-width: 1024px) {
-  .evg-subscribe__inp {
+  .evg-subscribe__input {
+    padding-right: 110px;
+    border-radius: 20px;
     font-size: 12px;
   }
 }
 @media (max-width: 768px) {
-  .evg-subscribe__inp {
+  .evg-subscribe__input {
+    padding-right: 90px;
+    border-radius: 14px;
     font-size: 10px;
   }
 }
 @media (max-width: 480px) {
-  .evg-subscribe__inp {
+  .evg-subscribe__input {
+    padding-right: 50px;
+    border-radius: 6px;
+    padding-left: 5px;
     font-size: 6px;
   }
 }
-.evg-subscribe__btn {
+.evg-subscribe__button {
   font-size: 14px;
   background-color: #000000;
   border-radius: 16px;
@@ -2154,31 +2190,45 @@ input {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  position: absolute;
+  max-height: 60px;
   color: #FFFFFF;
+  height: 100%;
+  right: 15px;
+  top: 15px;
 }
 
 @media (max-width: 1024px) {
-  .evg-subscribe__btn {
-    font-size: 12px;
-    border-radius: 14px;
+  .evg-subscribe__button {
     padding-right: 20px;
+    border-radius: 14px;
     padding-left: 20px;
+    max-height: 48px;
+    font-size: 12px;
+    right: 13px;
+    top: 13px;
   }
 }
 @media (max-width: 768px) {
-  .evg-subscribe__btn {
-    padding-right: 10px;
+  .evg-subscribe__button {
     border-radius: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-height: 36px;
     font-size: 10px;
+    right: 12px;
+    top: 12px;
   }
 }
 @media (max-width: 480px) {
-  .evg-subscribe__btn {
+  .evg-subscribe__button {
     border-radius: 6px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    max-height: 17px;
     font-size: 6px;
+    right: 9px;
+    top: 9px;
   }
 }
 /*# sourceMappingURL=index.css.map *//*# sourceMappingURL=Bog-form.css.map */
