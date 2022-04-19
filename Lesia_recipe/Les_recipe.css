@@ -1798,7 +1798,7 @@ input {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
   position: fixed;
-  z-index: 10;
+  z-index: 50;
   right: 0;
   left: 0;
   top: 0;
@@ -1806,6 +1806,7 @@ input {
 
 .vad-header__wrapper {
   justify-content: space-between;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   padding-bottom: 40px;
   align-items: center;
   padding-top: 40px;
@@ -2565,15 +2566,13 @@ input {
 }
 /*# sourceMappingURL=index.css.map */
 .Les-recipe {
-  display: block;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 64px;
 }
 .Les-recipe__text {
   display: block;
   width: 100%;
   text-align: center;
-  padding-top: 32px;
   padding-bottom: 64px;
 }
 .Les-recipe__text__title {
@@ -2605,9 +2604,13 @@ input {
 .L__card {
   display: block;
   width: 290px;
-  padding-bottom: 20px;
+  padding: 20px 10px 20px 10px;
   background-color: white;
   position: relative;
+  -webkit-transition: 0.7s linear;
+  -moz-transition: 0.7s linear;
+  -o-transition: 0.7s linear;
+  transition: 0.7s linear;
 }
 @media (max-width: 1400px) {
   .L__card {
@@ -2637,13 +2640,24 @@ input {
 }
 .L__card__link {
   display: block;
-  max-width: 290px;
+  width: fit-content;
 }
 .L__card__link__text {
   color: black;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
+}
+@media (max-width: 1400px) {
+  .L__card__link__text {
+    font-size: 24px;
+    background: white;
+  }
+}
+@media (max-width: 1024px) {
+  .L__card__link__text {
+    font-size: 18px;
+  }
 }
 .L__card__link__text:hover {
   color: black;
@@ -2673,6 +2687,7 @@ input {
   position: relative;
   width: 290px;
   height: 330px;
+  padding: 20px 10px 20px 10px;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -2744,9 +2759,21 @@ input {
   height: 42px;
   border-radius: 50%;
   position: absolute;
-  right: 16px;
-  top: 16px;
+  right: 20px;
+  top: 30px;
   background-color: white;
+}
+@media (max-width: 1400px) {
+  .Lcheck {
+    width: 52px;
+    height: 52px;
+  }
+}
+@media (max-width: 1024px) {
+  .Lcheck {
+    width: 42px;
+    height: 42px;
+  }
 }
 .Lcheck__icon {
   color: #c0c0c0;

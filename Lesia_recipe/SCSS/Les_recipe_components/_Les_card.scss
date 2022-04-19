@@ -2,9 +2,13 @@
 .L__card {
   display: block;
   width: 290px;
-  padding-bottom: 20px;
+  padding: 20px 10px 20px 10px;
   background-color: white;
   position: relative;
+  -webkit-transition: 0.7s linear;
+  -moz-transition: 0.7s linear;
+  -o-transition: 0.7s linear;
+  transition: 0.7s linear;
 
   @media (max-width: 1400px) {
     margin: 0 auto;
@@ -35,13 +39,22 @@
   // ссилка з текстом
   &__link {
     display: block;
-    max-width: 290px;
+    // max-width: 290px;
+    width: fit-content;
     //  ссилка
     &__text {
       color: $c-black;
       font-size: 18px;
       font-weight: 700;
       line-height: 1.5;
+      @media (max-width: 1400px) {
+        font-size: 24px;
+    
+        background: $c-white;
+      }
+      @media (max-width: 1024px) {
+        font-size: 18px;
+      }
       // зелена тінь при наведенні
       &:hover {
         color: $c-black;
