@@ -2608,6 +2608,10 @@ input {
   padding-bottom: 20px;
   background-color: white;
   position: relative;
+  -webkit-transition: 0.7s linear;
+  -moz-transition: 0.7s linear;
+  -o-transition: 0.7s linear;
+  transition: 0.7s linear;
 }
 @media (max-width: 1400px) {
   .L__card {
@@ -2756,36 +2760,6 @@ input {
 }
 .Lcheck__input:checked ~ .icon {
   color: #ff0000 !important;
-}
-
-.Loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% -50%);
-}
-.Loader__title {
-  font-size: 200px;
-  text-transform: uppercase;
-  background-image: url(./Lassets/L_img/water.jpg);
-  background-repeat: repeat-x;
-  background-clip: content-box;
-  animation: animate 15s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    background-position: left 0px top 80px;
-  }
-  40% {
-    background-position: left 800px top -50px;
-  }
-  80% {
-    background-position: left 1800px top -50px;
-  }
-  100% {
-    background-position: left 2400px top 80px;
-  }
 }
 
 /*# sourceMappingURL=Les_recipe.css.map */

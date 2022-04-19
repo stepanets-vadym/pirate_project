@@ -10,6 +10,10 @@
   -moz-transition: 0.7s linear;
   -o-transition: 0.7s linear;
   transition: 0.7s linear;
+  // @media (max-width: 1920px)
+  // {
+  //   transition: none;
+  // }
 
   @media (max-width: 1400px) {
     height: 500px;

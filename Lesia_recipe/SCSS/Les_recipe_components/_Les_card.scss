@@ -6,6 +6,11 @@
   background-color: white;
   position: relative;
 
+  -webkit-transition: 0.7s linear;
+  -moz-transition: 0.7s linear;
+  -o-transition: 0.7s linear;
+  transition: 0.7s linear;
+
   @media (max-width: 1400px) {
     margin: 0 auto;
     width: 450px;
