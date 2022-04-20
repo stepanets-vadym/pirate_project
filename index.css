@@ -1818,7 +1818,7 @@ input {
 
 .dim-section__title {
   color: rgba(175, 171, 171, 0.349);
-  background-image: url(../../assets/svg/wawe-4.svg);
+  background-image: url(assets/svg/wawe-4.svg);
   background-repeat: repeat-x;
   -webkit-background-clip: text;
   animation: animate 19s linear infinite;
