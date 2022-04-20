@@ -96,7 +96,6 @@ sass --watch ./scss/index.scss ./index.css
 - git add .
 - git commit -m "Адекватний коментар"
 - git push origin назва вашої гілки
-  пше згыр
 
 - git pull origin назва гілки
 
