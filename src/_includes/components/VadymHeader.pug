@@ -1,21 +1,19 @@
 mixin VadymHeader()
   header.vad-header
-    .container.vad-header__wrapper
+    .container.vad-header__wrapper#header
       +logo( {text:"Foodieland"} )
       .vad-header__block
         .vad-header__burger
           span
         .vad-header__navigation
           +navigation()
-            +listItem("#home","HOME", classes="navigation__link")
+            +listItem("./index.html","HOME", classes="navigation__link")
             +listItem("#about","ABOUT", classes="navigation__link")
-            +listItem("#works","WORKS", classes="navigation__link")
-            +listItem("#blog","BLOG", classes="navigation__link")
+            +listItem("./Yuri_Guide/Yuri_Guide.html","GUIDE", classes="navigation__link")
+            +listItem("./Lesia_recipe/Les_recipe.html","RECIPE", classes="navigation__link")
             +listItem("#contact","CONTACT", classes="navigation__link")
         .vad-header__button-block
-          button(type="button" class="btn btn-dark vad-header__btn features simptip-position-top simptip-success" data-tooltip="yea boy") 
-            a(href="#" target="_blank" class="vad-header__link")  Sign In
-          button(type="button" class="btn btn-dark vad-header__btn features simptip-position-top simptip-info" data-tooltip="oy eah") 
-            a(href="#" target="_blank" class="vad-header__link")  Sign Up
+            a(href="./Bogdana_form/Bog-form_one.html" class="vad-header__link btn btn-dark vad-header__btn features simptip-position-top simptip-success" data-tooltip="yea boy")  Sign In
+            a(href="./Bogdana_form/Bog-form_two.html" data-tooltip="oy eah" class="vad-header__link btn btn-dark vad-header__btn features simptip-position-top simptip-info")  Sign Up
 
 
