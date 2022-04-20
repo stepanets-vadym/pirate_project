@@ -1686,6 +1686,28 @@ input {
   color: #dbe2e5 !important;
 }
 
+.dim-section__title {
+  color: rgba(175, 171, 171, 0.349);
+  background-image: url(../../assets/svg/wawe-4.svg);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 19s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left 0px top 40px;
+  }
+  40% {
+    background-position: left 500px top -1px;
+  }
+  80% {
+    background-position: left 1000px top -1px;
+  }
+  100% {
+    background-position: left 1200px top -1px;
+  }
+}
 .vad-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
