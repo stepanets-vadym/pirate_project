@@ -1,0 +1,134 @@
+.dim-section {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  //   !Забрати при доєднанні до проекту
+  margin-top: 300px;
+
+  // *Заголовок_______
+  &__header {
+    text-align: center;
+  }
+  &__title {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    @include media("<=desktop") {
+      font-size: 38px;
+    }
+    @include media("<=tablet") {
+      font-size: 28px;
+    }
+  }
+  //*Підзаголовок_______
+  &__subtitle {
+    // font-family: Gilroy;
+    color: $c-text-gray;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 38px;
+    margin-top: 30px;
+    @include media("<=desktop") {
+      font-size: 14px;
+      line-height: 28px;
+      margin-top: 24px;
+    }
+    @include media("<=tablet") {
+      font-size: 12px;
+    }
+  }
+}
+// *Каталог________
+// .dim-catalog__wrapper {
+//   display: grid;
+// }
+.dim-catalog__wrapper {
+  padding-top: 100px;
+  @include media("<=desktop") {
+    padding-top: 50px;
+  }
+  @include media("<=phone") {
+    padding-top: 30px;
+  }
+}
+// !___________
+// *Грід контейнер______
+.dim-catalog__body {
+  display: grid;
+  // max content?
+  // auto?
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  @include media("<=screen") {
+    gap: 20px;
+  }
+  @include media("<=desktop") {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include media("<=tablet") {
+    gap: 10px;
+  }
+  @include media("<=phone") {
+    grid-template-columns: 1fr;
+  }
+}
+
+// *Обгортка картки_____
+.dim-catalog {
+  // border: 2px solid gray;
+  border-radius: 30px;
+  background: linear-gradient($c-item-gr);
+
+  padding: 16px 16px 0 16px;
+  position: relative;
+}
+//- *Фото і контент______
+.dim-product {
+  &__wrapper-img {
+    border-radius: 20px;
+    // width: 368px;
+    // height: 260px;
+    overflow: hidden;
+  }
+
+  &__content {
+    margin: 24px 8px 0;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: -1px;
+  }
+  // *Футер______
+  &__footer {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 38px;
+  }
+  &__description {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 30px;
+  }
+
+  &__description:last-child {
+    margin: 0;
+  }
+  &__item {
+    margin-right: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    color: $c-text-gray;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .dim-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
