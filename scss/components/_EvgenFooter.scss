@@ -6,7 +6,6 @@
   width: 100%;
   bottom: 0;
   left: 0;
-  margin-top: 100px;
 
   // Wrapper
   &__wrapper {
@@ -148,8 +147,9 @@
   &__text-color {
     color: $c-orange;
   }
-  // Icon
-  &__icon {
+  
+  // Icon block
+  &__icon-block {
     margin-right: 5px;
     margin-left: 5px;
     padding: 5px;
@@ -157,22 +157,7 @@
   &__icon-Facebook,
   &__icon-twitter,
   &__icon-instagram {
-    width: 32px;
-    height: 32px;
-
-    // Media
-    @include media("<=desktop") {
-      width: 23px;
-      height: 23px;
-    }
-    @include media("<=tablet") {
-      width: 18px;
-      height: 18px;
-    }
-    @include media("<=phone") {
-      width: 10px;
-      height: 10px;
-    }
+    color: $c-black;
   }
   &__icon-Facebook,
   &__icon-twitter {
@@ -190,3 +175,4 @@
     }
   }
 }
+

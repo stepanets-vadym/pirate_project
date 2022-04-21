@@ -1671,7 +1671,7 @@ h6,
 body {
   color: #000000;
   font-family: "Inter", sans-serif;
-  font-size: 16;
+  font-size: 16px;
 }
 
 .icon {
@@ -1765,7 +1765,6 @@ ul.navigatin__list {
 }
 
 .e-button--banner:hover {
-  background-color: #141414;
   color: #e71dc6;
 }
 
@@ -1947,7 +1946,23 @@ input {
   background-image: url(assets/svg/wawe-4.svg);
   background-repeat: repeat-x;
   -webkit-background-clip: text;
-  animation: animate 19s linear infinite;
+  -webkit-animation: animate 19s linear infinite;
+          animation: animate 19s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: left 0px top 40px;
+  }
+  40% {
+    background-position: left 500px top -1px;
+  }
+  80% {
+    background-position: left 1000px top -1px;
+  }
+  100% {
+    background-position: left 1200px top -1px;
+  }
 }
 
 @keyframes animate {
@@ -2071,11 +2086,6 @@ input {
   color: #ffffff;
 }
 
-<<<<<<< HEAD
-.logo {
-  font-size: 24;
-  font-family: "Lobster", cursive;
-=======
 .nr-banner {
   padding-top: 150px;
   height: 100vh;
@@ -2092,7 +2102,6 @@ input {
   background-color: #e7fafe;
   color: rgba(0, 0, 0, 0.6);
   border-radius: 40px;
->>>>>>> 7b4e7119be9fa3bbbcff06ab58a885c735e422c5
   position: relative;
   display: flex;
 }
@@ -2200,11 +2209,15 @@ input {
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   background: #4b3f4d;
   background: linear-gradient(90deg, #4b3f4d 0%, #1a2470 21%, #c9208d 65%, #4b3f4d 100%);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
   -webkit-background-clip: text;
-  animation-duration: 5s;
-  animation-name: title;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: title;
+          animation-name: title;
   background-clip: text;
   color: transparent;
 }
@@ -2409,11 +2422,25 @@ input {
 .nr-timer {
   transform-origin: center;
   transform-box: fill-box;
-  animation-name: time-circle;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-delay: 1s;
+  -webkit-animation-name: time-circle;
+          animation-name: time-circle;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes time-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes time-circle {
@@ -2422,6 +2449,14 @@ input {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes title {
+  0% {
+    background-position: left 0px top 10px;
+  }
+  100% {
+    background-position: left 1000px top 10px;
   }
 }
 @keyframes title {
@@ -2453,14 +2488,6 @@ input {
     font-size: 38px;
   }
 }
-<<<<<<< HEAD
-.evg-footer {
-  background-color: #FFFFFF;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  margin-top: 100px;
-=======
 @media (max-width: 768px) {
   .dim-section__title {
     font-size: 28px;
@@ -2584,230 +2611,11 @@ input {
   max-height: 100%;
 }
 
-/*# sourceMappingURL=index.css.map */
-.Les-recipe {
-  display: block;
+.evg-footer {
+  background-color: #ffffff;
   width: 100%;
-  padding-top: 32px;
-}
-.Les-recipe__text {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding-top: 32px;
-  padding-bottom: 64px;
-}
-.Les-recipe__text__title {
-  font-family: Inter, sans-serif;
-  font-weight: 600;
-  font-size: 36px;
-}
-.Les-recipe__content {
-  width: 100%;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-}
-@media (max-width: 1400px) {
-  .Les-recipe__content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-  }
-}
-@media (max-width: 686px) {
-  .Les-recipe__content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.L__card {
-  display: block;
-  width: 290px;
-  padding-bottom: 20px;
-  background-color: white;
-  position: relative;
-}
-@media (max-width: 1400px) {
-  .L__card {
-    margin: 0 auto;
-    width: 450px;
-    background: white;
-  }
-}
-@media (max-width: 1024px) {
-  .L__card {
-    margin: 0 auto;
-    width: 290px;
-  }
-}
-.L__card__photo {
-  display: block;
-  width: 100%;
-}
-.L__card__photo__img {
-  border-radius: 20px;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 16px;
-}
-.L__card__photo__heart {
-  display: block;
-}
-.L__card__link {
-  display: block;
-  max-width: 290px;
-}
-.L__card__link__text {
-  color: black;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.5;
-}
-.L__card__link__text:hover {
-  color: black;
-  text-shadow: 1px 1px 2px #357355;
-}
-.L__card__specifics {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 22px;
-  width: 230px;
-}
-.L__card__specifics__icon {
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-}
-.L__card__specifics__text {
-  font-family: inter;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #357355;
-}
-
-.Les {
-  position: relative;
-  width: 290px;
-  height: 330px;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transition: 0.7s linear;
-  -moz-transition: 0.7s linear;
-  -o-transition: 0.7s linear;
-  transition: 0.7s linear;
-}
-@media (max-width: 1400px) {
-  .Les {
-    height: 500px;
-    width: 450px;
-    background: white;
-  }
-}
-@media (max-width: 1024px) {
-  .Les {
-    width: 290px;
-    height: 320px;
-  }
-}
-.Les__card {
-  display: block;
-  width: 290px;
-  padding-bottom: 20px;
-  background: white;
-  position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-  z-index: 2;
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-}
-.Les__2 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: rotateY(-180deg);
-  -moz-transform: rotateY(-180deg);
-  -ms-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  border-radius: 20px;
-}
-.Les:hover,
-.Les .Les__card__2 {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
-.Lcheck {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  position: absolute;
-  right: 16px;
-  top: 16px;
-  background-color: white;
-}
-.Lcheck__icon {
-  color: #c0c0c0;
-}
-.Lcheck__input {
-  display: none;
-}
-.Lcheck__input:checked ~ .icon {
-  color: #ff0000 !important;
-}
-
-.Loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% -50%);
-}
-.Loader__title {
-  font-size: 200px;
-  text-transform: uppercase;
-  background-image: url(./Lassets/L_img/water.jpg);
-  background-repeat: repeat-x;
-  background-clip: content-box;
-  animation: animate 15s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    background-position: left 0px top 80px;
-  }
-  40% {
-    background-position: left 800px top -50px;
-  }
-  80% {
-    background-position: left 1800px top -50px;
-  }
-  100% {
-    background-position: left 2400px top 80px;
-  }
->>>>>>> 7b4e7119be9fa3bbbcff06ab58a885c735e422c5
 }
 
 .evg-footer__wrapper {
@@ -2968,38 +2776,19 @@ input {
   }
 }
 .evg-footer__text-color {
-  color: #FD8061;
+  color: #fd8061;
 }
 
-.evg-footer__icon {
+.evg-footer__icon-block {
   margin-right: 5px;
   margin-left: 5px;
   padding: 5px;
 }
 
 .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
-  width: 32px;
-  height: 32px;
+  color: #000000;
 }
 
-@media (max-width: 1024px) {
-  .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
-    width: 23px;
-    height: 23px;
-  }
-}
-@media (max-width: 768px) {
-  .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
-    width: 18px;
-    height: 18px;
-  }
-}
-@media (max-width: 480px) {
-  .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
-    width: 10px;
-    height: 10px;
-  }
-}
 .evg-footer__icon-Facebook, .evg-footer__icon-twitter {
   margin-right: 30px;
 }
@@ -3019,4 +2808,212 @@ input {
     margin-right: 5px;
   }
 }
-/*# sourceMappingURL=index.css.map *//*# sourceMappingURL=Les_recipe.css.map */
+/*# sourceMappingURL=index.css.map */
+.Les-recipe {
+  display: block;
+  width: 100%;
+  padding-top: 32px;
+}
+.Les-recipe__text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+.Les-recipe__text__title {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+.Les-recipe__content {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+@media (max-width: 1400px) {
+  .Les-recipe__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+@media (max-width: 686px) {
+  .Les-recipe__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.L__card {
+  display: block;
+  width: 290px;
+  padding-bottom: 20px;
+  background-color: white;
+  position: relative;
+}
+@media (max-width: 1400px) {
+  .L__card {
+    margin: 0 auto;
+    width: 450px;
+    background: white;
+  }
+}
+@media (max-width: 1024px) {
+  .L__card {
+    margin: 0 auto;
+    width: 290px;
+  }
+}
+.L__card__photo {
+  display: block;
+  width: 100%;
+}
+.L__card__photo__img {
+  border-radius: 20px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.L__card__photo__heart {
+  display: block;
+}
+.L__card__link {
+  display: block;
+  max-width: 290px;
+}
+.L__card__link__text {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.L__card__link__text:hover {
+  color: black;
+  text-shadow: 1px 1px 2px #357355;
+}
+.L__card__specifics {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 22px;
+  width: 230px;
+}
+.L__card__specifics__icon {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+.L__card__specifics__text {
+  font-family: inter;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #357355;
+}
+
+.Les {
+  position: relative;
+  width: 290px;
+  height: 330px;
+  transform-style: preserve-3d;
+  transition: 0.7s linear;
+}
+@media (max-width: 1400px) {
+  .Les {
+    height: 500px;
+    width: 450px;
+    background: white;
+  }
+}
+@media (max-width: 1024px) {
+  .Les {
+    width: 290px;
+    height: 320px;
+  }
+}
+.Les__card {
+  display: block;
+  width: 290px;
+  padding-bottom: 20px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.Les__2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+  border-radius: 20px;
+}
+.Les:hover,
+.Les .Les__card__2 {
+  transform: rotateY(180deg);
+}
+
+.Lcheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background-color: white;
+}
+.Lcheck__icon {
+  color: #c0c0c0;
+}
+.Lcheck__input {
+  display: none;
+}
+.Lcheck__input:checked ~ .icon {
+  color: #ff0000 !important;
+}
+
+.Loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+}
+.Loader__title {
+  font-size: 200px;
+  text-transform: uppercase;
+  background-image: url(./Lassets/L_img/water.jpg);
+  background-repeat: repeat-x;
+  background-clip: content-box;
+  -webkit-animation: animate 15s linear infinite;
+          animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left 0px top 80px;
+  }
+  40% {
+    background-position: left 800px top -50px;
+  }
+  80% {
+    background-position: left 1800px top -50px;
+  }
+  100% {
+    background-position: left 2400px top 80px;
+  }
+}/*# sourceMappingURL=Les_recipe.css.map */

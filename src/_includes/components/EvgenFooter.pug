@@ -20,19 +20,19 @@ mixin EvgenFooter()
             //- Link
             a(href="#").evg-footer__link-item
               //- Simptip
-              span.simptip-position-top(data-tooltip="Click on Recipes") Recipes
+              span.simptip-position-top(data-tooltip="Recipes") Recipes
             //- Link
             a(href="#").evg-footer__link-item
               //- Simptip
-              span.simptip-position-top(data-tooltip="Click on Blog") Blog
+              span.simptip-position-top(data-tooltip="Blog") Blog
             //- Link
             a(href="#").evg-footer__link-item
               //- Simptip
-              span.simptip-position-top(data-tooltip="Click on Contact") Contact
+              span.simptip-position-top(data-tooltip="Contact") Contact
             //- Link
             a(href="#").evg-footer__link-item
               //- Simptip
-              span.simptip-position-top(data-tooltip="Click on About us") About us
+              span.simptip-position-top(data-tooltip="About us") About us
         //- Line
         hr.evg-footer__line     
         //- Text-icon block
@@ -40,17 +40,17 @@ mixin EvgenFooter()
           //- Text
           .evg-footer__text © 2020 Flowbase. Powered by 
             span.evg-footer__text-color Webflow
-          //- Icon
-          .evg-footer__icon
+          //- Icon block
+          .evg-footer__icon-block
             //- Facebook
-            svg.evg-footer__icon-Facebook
-              a(href="#") 
+            a(href="#").evg-footer__icon-Facebook
+              svg.icon icon-Facebook
                 use(xlink:href="#icon-Facebook")
             //- Twitter
-            svg.evg-footer__icon-twitter
-              a(href="#") 
+            a(href="#").evg-footer__icon-twitter
+              svg.icon icon-twitter
                 use(xlink:href="#icon-twitter")
             //- Instagram
-            svg.evg-footer__icon-instagram
-              a(href="#")
+            a(href="#").evg-footer__icon-instagram
+              svg.icon icon-instagram
                 use(xlink:href="#icon-instagram")   

@@ -1671,7 +1671,7 @@ h6,
 body {
   color: #000000;
   font-family: "Inter", sans-serif;
-  font-size: 16;
+  font-size: 16px;
 }
 
 .icon {
@@ -1765,7 +1765,6 @@ ul.navigatin__list {
 }
 
 .e-button--banner:hover {
-  background-color: #141414;
   color: #e71dc6;
 }
 
@@ -1947,7 +1946,23 @@ input {
   background-image: url(assets/svg/wawe-4.svg);
   background-repeat: repeat-x;
   -webkit-background-clip: text;
-  animation: animate 19s linear infinite;
+  -webkit-animation: animate 19s linear infinite;
+          animation: animate 19s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: left 0px top 40px;
+  }
+  40% {
+    background-position: left 500px top -1px;
+  }
+  80% {
+    background-position: left 1000px top -1px;
+  }
+  100% {
+    background-position: left 1200px top -1px;
+  }
 }
 
 @keyframes animate {
@@ -2071,11 +2086,6 @@ input {
   color: #ffffff;
 }
 
-<<<<<<< HEAD
-.logo {
-  font-size: 24;
-  font-family: "Lobster", cursive;
-=======
 .nr-banner {
   padding-top: 150px;
   height: 100vh;
@@ -2092,7 +2102,6 @@ input {
   background-color: #e7fafe;
   color: rgba(0, 0, 0, 0.6);
   border-radius: 40px;
->>>>>>> 7b4e7119be9fa3bbbcff06ab58a885c735e422c5
   position: relative;
   display: flex;
 }
@@ -2200,11 +2209,15 @@ input {
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   background: #4b3f4d;
   background: linear-gradient(90deg, #4b3f4d 0%, #1a2470 21%, #c9208d 65%, #4b3f4d 100%);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
   -webkit-background-clip: text;
-  animation-duration: 5s;
-  animation-name: title;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: title;
+          animation-name: title;
   background-clip: text;
   color: transparent;
 }
@@ -2409,11 +2422,25 @@ input {
 .nr-timer {
   transform-origin: center;
   transform-box: fill-box;
-  animation-name: time-circle;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-delay: 1s;
+  -webkit-animation-name: time-circle;
+          animation-name: time-circle;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes time-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes time-circle {
@@ -2422,6 +2449,14 @@ input {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes title {
+  0% {
+    background-position: left 0px top 10px;
+  }
+  100% {
+    background-position: left 1000px top 10px;
   }
 }
 @keyframes title {
@@ -2453,13 +2488,6 @@ input {
     font-size: 38px;
   }
 }
-<<<<<<< HEAD
-.evg-footer {
-  background-color: #FFFFFF;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-=======
 @media (max-width: 768px) {
   .dim-section__title {
     font-size: 28px;
@@ -2583,6 +2611,203 @@ input {
   max-height: 100%;
 }
 
+.evg-footer {
+  background-color: #ffffff;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.evg-footer__wrapper {
+  flex-direction: column;
+  display: flex;
+  padding: 5px;
+}
+
+.evg-footer__logo-link {
+  justify-content: space-between;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: flex;
+  padding: 5px;
+}
+
+.evg-footer__logo {
+  padding: 5px;
+}
+
+.evg-footer__logo-foodieland {
+  font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+  .evg-footer__logo-foodieland {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-footer__logo-foodieland {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__logo-foodieland {
+    font-size: 12px;
+  }
+}
+.evg-footer__logo-text {
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
+  padding: 5px;
+}
+
+@media (max-width: 1024px) {
+  .evg-footer__logo-text {
+    margin-top: 5px;
+    font-size: 14px;
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-footer__logo-text {
+    margin-top: 0;
+    font-size: 10px;
+    width: 160px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__logo-text {
+    font-size: 8px;
+  }
+}
+.evg-footer__link {
+  align-self: center;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .evg-footer__link {
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__link {
+    width: 50px;
+  }
+}
+.evg-footer__link-item {
+  margin-right: 60px;
+  color: #000000;
+  padding: 5px;
+}
+
+@media (max-width: 1024px) {
+  .evg-footer__link-item {
+    margin-right: 13px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-footer__link-item {
+    margin-right: 0;
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__link-item {
+    font-size: 8px;
+  }
+}
+.evg-footer__link-item:last-child {
+  margin-right: 0px;
+}
+
+.evg-footer__line {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1024px) {
+  .evg-footer__line {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-footer__line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__line {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+}
+.evg-footer__text-icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.evg-footer__text {
+  align-self: center;
+  margin: auto;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1024px) {
+  .evg-footer__text {
+    font-size: 14px;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .evg-footer__text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__text {
+    font-size: 8px;
+  }
+}
+.evg-footer__text-color {
+  color: #fd8061;
+}
+
+.evg-footer__icon-block {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
+  color: #000000;
+}
+
+.evg-footer__icon-Facebook, .evg-footer__icon-twitter {
+  margin-right: 30px;
+}
+
+@media (max-width: 1024px) {
+  .evg-footer__icon-Facebook, .evg-footer__icon-twitter {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .evg-footer__icon-Facebook, .evg-footer__icon-twitter {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .evg-footer__icon-Facebook, .evg-footer__icon-twitter {
+    margin-right: 5px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
 * {
   box-sizing: border-box;
@@ -2769,7 +2994,10 @@ img {
 /* LINKS */
 .yur-content__links {
   margin-left: 30px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
+  position: -webkit-sticky;
   position: sticky;
   top: 150px;
 }
@@ -2837,216 +3065,4 @@ img {
 [data-tooltip]:focus:after {
     visibility: hidden;
   }
->>>>>>> 7b4e7119be9fa3bbbcff06ab58a885c735e422c5
-}
-
-.evg-footer__wrapper {
-  flex-direction: column;
-  display: flex;
-  padding: 5px;
-}
-
-.evg-footer__logo-link {
-  justify-content: space-between;
-  margin-right: 5px;
-  margin-left: 5px;
-  display: flex;
-  padding: 5px;
-}
-
-.evg-footer__logo {
-  padding: 5px;
-}
-
-.evg-footer__logo-foodieland {
-  font-size: 24px;
-}
-
-@media (max-width: 1024px) {
-  .evg-footer__logo-foodieland {
-    font-size: 18px;
-  }
-}
-@media (max-width: 768px) {
-  .evg-footer__logo-foodieland {
-    font-size: 14px;
-  }
-}
-@media (max-width: 480px) {
-  .evg-footer__logo-foodieland {
-    font-size: 12px;
-  }
-}
-.evg-footer__logo-text {
-  color: rgba(0, 0, 0, 0.6);
-  margin-top: 10px;
-  padding: 5px;
-}
-
-@media (max-width: 1024px) {
-  .evg-footer__logo-text {
-    margin-top: 5px;
-    font-size: 14px;
-    width: 300px;
-  }
-}
-@media (max-width: 768px) {
-  .evg-footer__logo-text {
-    margin-top: 0;
-    font-size: 10px;
-    width: 160px;
-  }
-}
-@media (max-width: 480px) {
-  .evg-footer__logo-text {
-    font-size: 8px;
-  }
-}
-.evg-footer__link {
-  align-self: center;
-  padding: 5px;
-}
-
-@media (max-width: 768px) {
-  .evg-footer__link {
-    padding: 0;
-  }
-}
-@media (max-width: 480px) {
-  .evg-footer__link {
-    width: 50px;
-  }
-}
-.evg-footer__link-item {
-  margin-right: 60px;
-  color: #000000;
-  padding: 5px;
-}
-
-@media (max-width: 1024px) {
-  .evg-footer__link-item {
-    margin-right: 13px;
-    font-size: 14px;
-  }
-}
-@media (max-width: 768px) {
-  .evg-footer__link-item {
-    margin-right: 0;
-    font-size: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .evg-footer__link-item {
-    font-size: 8px;
-  }
-}
-.evg-footer__link-item:last-child {
-  margin-right: 0px;
-}
-
-.evg-footer__line {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-@media (max-width: 1024px) {
-  .evg-footer__line {
-    margin-top: 13px;
-    margin-bottom: 13px;
-  }
-}
-@media (max-width: 768px) {
-  .evg-footer__line {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .evg-footer__line {
-    margin-top: 7px;
-    margin-bottom: 7px;
-  }
-}
-.evg-footer__text-icon {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.evg-footer__text {
-  align-self: center;
-  margin: auto;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-@media (max-width: 1024px) {
-  .evg-footer__text {
-    font-size: 14px;
-    margin: 0;
-  }
-}
-@media (max-width: 768px) {
-  .evg-footer__text {
-    font-size: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .evg-footer__text {
-    font-size: 8px;
-  }
-}
-.evg-footer__text-color {
-  color: #FD8061;
-}
-
-.evg-footer__icon {
-  margin-right: 5px;
-  margin-left: 5px;
-  padding: 5px;
-}
-
-.evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
-  width: 32px;
-  height: 32px;
-}
-
-@media (max-width: 1024px) {
-  .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
-    width: 23px;
-    height: 23px;
-  }
-}
-@media (max-width: 768px) {
-  .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
-    width: 18px;
-    height: 18px;
-  }
-}
-@media (max-width: 480px) {
-  .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
-    width: 10px;
-    height: 10px;
-  }
-}
-.evg-footer__icon-Facebook, .evg-footer__icon-twitter {
-  margin-right: 30px;
-}
-
-@media (max-width: 1024px) {
-  .evg-footer__icon-Facebook, .evg-footer__icon-twitter {
-    margin-right: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .evg-footer__icon-Facebook, .evg-footer__icon-twitter {
-    margin-right: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .evg-footer__icon-Facebook, .evg-footer__icon-twitter {
-    margin-right: 5px;
-  }
-}
-/*# sourceMappingURL=index.css.map *//*# sourceMappingURL=Yuri_Guide.css.map */
+}/*# sourceMappingURL=Yuri_Guide.css.map */

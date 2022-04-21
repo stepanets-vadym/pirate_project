@@ -1569,7 +1569,7 @@ h6,
 body {
   color: #000000;
   font-family: "Inter", sans-serif;
-  font-size: 16;
+  font-size: 16px;
 }
 
 .icon {
@@ -1655,7 +1655,6 @@ ul.navigatin__list {
   height: 60px;
 }
 .e-button--banner:hover {
-  background-color: #141414;
   color: #e71dc6;
 }
 .e-button--banner:focus {
@@ -1931,17 +1930,9 @@ input {
   color: #ffffff;
 }
 
-<<<<<<< HEAD
-.logo {
-  font-size: 24;
-  font-family: "Lobster", cursive;
-  position: relative;
-  z-index: 10;
-=======
 .nr-banner {
   padding-top: 150px;
   height: 100vh;
->>>>>>> 7b4e7119be9fa3bbbcff06ab58a885c735e422c5
 }
 @media (max-width: 1160px) {
   .nr-banner {
@@ -2406,7 +2397,7 @@ input {
 }
 
 .evg-footer {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -2558,34 +2549,15 @@ input {
   }
 }
 .evg-footer__text-color {
-  color: #FD8061;
+  color: #fd8061;
 }
-.evg-footer__icon {
+.evg-footer__icon-block {
   margin-right: 5px;
   margin-left: 5px;
   padding: 5px;
 }
 .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
-  width: 32px;
-  height: 32px;
-}
-@media (max-width: 1024px) {
-  .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
-    width: 23px;
-    height: 23px;
-  }
-}
-@media (max-width: 768px) {
-  .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
-    width: 18px;
-    height: 18px;
-  }
-}
-@media (max-width: 480px) {
-  .evg-footer__icon-Facebook, .evg-footer__icon-twitter, .evg-footer__icon-instagram {
-    width: 10px;
-    height: 10px;
-  }
+  color: #000000;
 }
 .evg-footer__icon-Facebook, .evg-footer__icon-twitter {
   margin-right: 30px;
