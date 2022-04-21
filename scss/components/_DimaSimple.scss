@@ -18,17 +18,24 @@
     }
     @include media("<=tablet") {
       font-size: 28px;
+      @include media("<=phone") {
+        color: $c-wawe-blue;
+      }
     }
   }
   //*Підзаголовок_______
   &__subtitle {
-    // font-family: Gilroy;
     color: $c-text-gray;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
     line-height: 38px;
     margin-top: 30px;
+    max-width: 726px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
     @include media("<=desktop") {
       font-size: 14px;
       line-height: 28px;
@@ -39,11 +46,11 @@
     }
   }
 }
-/// *Каталог________
-// .dim-catalog__wrapper {
-//   display: grid;
-// }
-.dim-catalog__wrapper {
+// *Каталог________
+
+// *Грід контейнер______
+.dim-catalog__body {
+  display: grid;
   padding-top: 100px;
   @include media("<=desktop") {
     padding-top: 50px;
@@ -51,11 +58,6 @@
   @include media("<=phone") {
     padding-top: 30px;
   }
-}
-// !___________
-// *Грід контейнер______
-.dim-catalog__body {
-  display: grid;
   // max content?
   // auto?
   grid-template-columns: 1fr 1fr 1fr;
@@ -80,7 +82,7 @@
   border-radius: 30px;
   background: linear-gradient($c-item-gr);
 
-  padding: 16px 16px 0 16px;
+  padding: 16px 16px 16px 16px;
   position: relative;
 }
 //- *Фото і контент______
@@ -101,6 +103,8 @@
     font-style: normal;
     line-height: 32px;
     letter-spacing: -1px;
+    max-width: 352px;
+    text-align: start;
   }
   // *Футер______
   &__footer {
