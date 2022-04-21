@@ -1,2 +1,236 @@
+//- *Каталог рецептів_________
 mixin DimaSimple()
-  .dim-title dsfsdfsdf
+    section.dim-section-catalog.container
+        .dim-section 
+            //- *Заголовок_______
+            header.dim-section__header
+                <span class="simptip-position-top" data-tooltip="Вміст підказки"> 
+                h1.dim-section__title Simple and tasty recipes </span>
+                //-*Підзаголовок_______ 
+                .dim-section__subtitle Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut
+                    br
+                    |ut labore et dolore magna aliqut enim ad minim
+            //- *Обгорка каталогу_______
+            .dim-catalog__wrapper 
+
+                //- *Грід контейнер_______
+                .dim-catalog__body
+                    //- *Картка 1_________________________________
+
+                    .dim-catalog.catalog__item
+                        +heart
+
+                        //- *Фото і контент______
+                        .dim-product
+                            .dim-product__wrapper-img
+                                img.dim-image(src="./assets/img/dim-img/burger.png" alt="food")
+                            .dim-product__content
+                                h3.dim-product__title Big and Juicy Wagyu Beef 
+                                    br 
+                                    |Cheeseburger
+
+                                .dim-product__footer
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +timer
+                                        li.dim-product__item  30 Minutes
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +fork-knife
+                                        li.dim-product__item Snack
+
+                    //- *Картка 2_____________________________
+                    .dim-catalog.catalog__item
+                        +heart
+
+                        //- *Фото і контент______
+                        .dim-product
+                            .dim-product__wrapper-img
+                                img.dim-image(src="./assets/img/dim-img/Roasted Salmon.png" alt="food")
+                            .dim-product__content
+                                h3.dim-product__title Fresh Lime Roasted Salmon with
+                                    br 
+                                    |Ginger Sauce
+
+                                .dim-product__footer
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +timer
+                                        li.dim-product__item  30 Minutes
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +fork-knife
+                                        li.dim-product__item Fish
+                    //- *Картка 3_____________________________
+                    .dim-catalog.catalog__item
+                        +heart
+
+                        //- *Фото і контент______
+                        .dim-product
+                            .dim-product__wrapper-img
+                                img.dim-image(src="./assets/img/dim-img/Strawberry Oatmeal Pancake.png" alt="food")
+                            .dim-product__content
+                                h3.dim-product__title Strawberry Oatmeal Pancake
+                                    br 
+                                    |with Honey Syrup
+
+                                .dim-product__footer
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +timer
+                                        li.dim-product__item  30 Minutes
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +fork-knife
+                                        li.dim-product__item Breakfast
+                    //- *Картка 4_____________________________
+                    .dim-catalog.catalog__item
+                        +heart
+
+                        //- *Фото і контент______
+                        .dim-product
+                            .dim-product__wrapper-img
+                                img.dim-image(src="./assets/img/dim-img/Fresh and Healthy.png" alt="food")
+                            .dim-product__content
+                                h3.dim-product__title Fresh and Healthy Mixed  
+                                    br 
+                                    |Mayonnaise Salad
+
+                                .dim-product__footer
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +timer
+                                        li.dim-product__item  30 Minutes
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +fork-knife
+                                        li.dim-product__item Healthy
+                    //- *Картка 5_____________________________
+                    .dim-catalog.catalog__item
+                        +heart
+
+                        //- *Фото і контент______
+                        .dim-product
+                            .dim-product__wrapper-img
+                                img.dim-image(src="./assets/img/dim-img/Chicken Meatballs.png" alt="burger")
+                            .dim-product__content
+                                h3.dim-product__title Chicken Meatballs with Cream
+                                    br 
+                                    |Cheese
+
+                                .dim-product__footer
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +timer
+                                        li.dim-product__item  30 Minutes
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +fork-knife
+                                        li.dim-product__item Meat
+                    //- *Картка 6_____________________________
+                    .dim-catalog.catalog__item
+                        +heart
+
+                        //- *Фото і контент______
+                        .dim-product
+                            .dim-product__wrapper-img
+                                img.dim-image(src="./assets/img/dim-img/Appetizing Appeal.png" alt="burger")
+                            .dim-product__content
+                                h3.dim-product__title Things that Contribute Food's   
+                                    br 
+                                    |Appetizing Appeal
+
+                                .dim-product__footer
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +timer
+                                        li.dim-product__item  30 Minutes
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +fork-knife
+                                        li.dim-product__item Snack
+                    //- *Картка 7_____________________________
+                    .dim-catalog.catalog__item
+                        +heart
+
+                        //- *Фото і контент______
+                        .dim-product
+                            .dim-product__wrapper-img
+                                img.dim-image(src="./assets/img/dim-img/Fruity Pancake.png" alt="burger")
+                            .dim-product__content
+                                h3.dim-product__title Fruity Pancake with Orange &#38;
+                                    br 
+                                    |Blueberry
+
+                                .dim-product__footer
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +timer
+                                        li.dim-product__item  30 Minutes
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +fork-knife
+                                        li.dim-product__item Sweet
+                    //- *Картка 8_____________________________
+                    .dim-catalog.catalog__item
+                        +heart
+
+                        //- *Фото і контент______
+                        .dim-product
+                            .dim-product__wrapper-img
+                                img.dim-image(src="./assets/img/dim-img/The Best Easy.png" alt="burger")
+                            .dim-product__content
+                                h3.dim-product__title The Best Easy One Pot Chicken
+                                    br 
+                                    |and Rice
+
+                                .dim-product__footer
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +timer
+                                        li.dim-product__item  30 Minutes
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +fork-knife
+                                        li.dim-product__item Snack
+                    //- *Картка 9_____________________________
+                    .dim-catalog.catalog__item
+                        +heart
+
+                        //- *Фото і контент______
+                        .dim-product
+                            .dim-product__wrapper-img
+                                img.dim-image(src="./assets/img/dim-img/The Creamiest Creamy.png" alt="food")
+                            .dim-product__content
+                                h3.dim-product__title The Creamiest Creamy Chicken 
+                                    br 
+                                    |and Bacon Pasta
+
+                                .dim-product__footer
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +timer
+                                        li.dim-product__item  30 Minutes
+                                    ul.dim-product__description
+                                        li.dim-product__item 
+                                            +fork-knife
+                                        li.dim-product__item Noodles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
