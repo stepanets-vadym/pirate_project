@@ -2,9 +2,6 @@
   max-width: 1280px;
   margin: 0 auto;
 
-  //   !Забрати при доєднанні до проекту
-  margin-top: 300px;
-
   // *Заголовок_______
   &__header {
     text-align: center;
@@ -60,20 +57,21 @@
   }
   // max content?
   // auto?
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   @include media("<=screen") {
     gap: 20px;
   }
   @include media("<=desktop") {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   @include media("<=tablet") {
     gap: 10px;
-  }
-  @include media("<=phone") {
     grid-template-columns: 1fr;
   }
+  // @include media("<=phone") {
+  //   grid-template-columns: 1fr;
+  // }
 }
 
 // *Обгортка картки_____

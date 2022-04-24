@@ -1779,8 +1779,8 @@ input {
 }
 
 .dim-icon {
-  width: 24px;
-  height: 24px;
+  font-size: 24px;
+  color: #000000;
 }
 
 .dim-check {
@@ -2256,7 +2256,6 @@ input {
 .dim-section {
   max-width: 1280px;
   margin: 0 auto;
-  margin-top: 300px;
 }
 .dim-section__header {
   text-align: center;
@@ -2310,7 +2309,7 @@ input {
 .dim-catalog__body {
   display: grid;
   padding-top: 100px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 @media (max-width: 1024px) {
@@ -2330,23 +2329,19 @@ input {
 }
 @media (max-width: 1024px) {
   .dim-catalog__body {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 768px) {
   .dim-catalog__body {
     gap: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .dim-catalog__body {
     grid-template-columns: 1fr;
   }
 }
 
 .dim-catalog {
   border-radius: 30px;
-  background: linear-gradient(rgba(231, 249, 253, 0), #e7f9fd);
+  background: linear-gradient(#e7f9fd00, #e7f9fd);
   padding: 16px 16px 16px 16px;
   position: relative;
 }
