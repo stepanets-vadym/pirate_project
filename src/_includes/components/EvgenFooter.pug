@@ -1,7 +1,56 @@
-mixin EvgenFooter()
-  footer.evg-footer 
-    .evg-footer__wrapper.container
-      .evg-footer__text
-      
+//- * EvgenFooter
 
-      +logo( {text:"Foodieland"} )      
+mixin EvgenFooter()
+  //- Footer block
+  footer.evg-footer
+    .container
+      //- Wrapper
+      .evg-footer__wrapper
+        //- Logo-link block
+        .evg-footer__logo-link
+          //- Logo block
+          .evg-footer__logo
+            //- Foodieland logo
+            .evg-footer__logo-foodieland
+              +logo( {text:"Foodieland"} )
+            //- Text
+            .evg-footer__logo-text Lorem ipsum dolor sit amet, consectetuipisicing elit,
+          //- Link block
+          .evg-footer__link
+            //- Link
+            a(href="#").evg-footer__link-item
+              //- Simptip
+              span.simptip-position-top(data-tooltip="Recipes") Recipes
+            //- Link
+            a(href="#").evg-footer__link-item
+              //- Simptip
+              span.simptip-position-top(data-tooltip="Blog") Blog
+            //- Link
+            a(href="#").evg-footer__link-item
+              //- Simptip
+              span.simptip-position-top(data-tooltip="Contact") Contact
+            //- Link
+            a(href="#").evg-footer__link-item
+              //- Simptip
+              span.simptip-position-top(data-tooltip="About us") About us
+        //- Line
+        hr.evg-footer__line     
+        //- Text-icon block
+        .evg-footer__text-icon
+          //- Text
+          .evg-footer__text © 2020 Flowbase. Powered by 
+            span.evg-footer__text-color Webflow
+          //- Icon block
+          .evg-footer__icon-block
+            //- Facebook
+            a(href="#").evg-footer__icon-Facebook
+              svg.icon icon-Facebook
+                use(xlink:href="#icon-Facebook")
+            //- Twitter
+            a(href="#").evg-footer__icon-twitter
+              svg.icon icon-twitter
+                use(xlink:href="#icon-twitter")
+            //- Instagram
+            a(href="#").evg-footer__icon-instagram
+              svg.icon icon-instagram
+                use(xlink:href="#icon-instagram")   
