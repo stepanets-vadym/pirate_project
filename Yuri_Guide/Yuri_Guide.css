@@ -148,11 +148,9 @@ p {
 
 abbr[title],
 abbr[data-bs-original-title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   cursor: help;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
 
 address {
@@ -449,10 +447,6 @@ legend + * {
   padding: 0;
 }
 
-::-webkit-file-upload-button {
-  font: inherit;
-}
-
 ::file-selector-button {
   font: inherit;
 }
@@ -606,10 +600,7 @@ progress {
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
@@ -1266,8 +1257,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -1587,6 +1577,8 @@ template {
 *:before,
 *,
 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1684,10 +1676,6 @@ body {
 
 .icon:not(.has-stroke) {
   stroke-width: 0;
-}
-
-*::-moz-selection {
-  background-color: rgba(253, 128, 97, 0.3);
 }
 
 *::selection {
@@ -1946,23 +1934,7 @@ input {
   background-image: url(assets/svg/wawe-4.svg);
   background-repeat: repeat-x;
   -webkit-background-clip: text;
-  -webkit-animation: animate 19s linear infinite;
-          animation: animate 19s linear infinite;
-}
-
-@-webkit-keyframes animate {
-  0% {
-    background-position: left 0px top 40px;
-  }
-  40% {
-    background-position: left 500px top -1px;
-  }
-  80% {
-    background-position: left 1000px top -1px;
-  }
-  100% {
-    background-position: left 1200px top -1px;
-  }
+  animation: animate 19s linear infinite;
 }
 
 @keyframes animate {
@@ -2209,15 +2181,11 @@ input {
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   background: #4b3f4d;
   background: linear-gradient(90deg, #4b3f4d 0%, #1a2470 21%, #c9208d 65%, #4b3f4d 100%);
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   -webkit-background-clip: text;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-name: title;
-          animation-name: title;
+  animation-duration: 5s;
+  animation-name: title;
   background-clip: text;
   color: transparent;
 }
@@ -2422,25 +2390,11 @@ input {
 .nr-timer {
   transform-origin: center;
   transform-box: fill-box;
-  -webkit-animation-name: time-circle;
-          animation-name: time-circle;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-@-webkit-keyframes time-circle {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  animation-name: time-circle;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
 }
 
 @keyframes time-circle {
@@ -2449,14 +2403,6 @@ input {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes title {
-  0% {
-    background-position: left 0px top 10px;
-  }
-  100% {
-    background-position: left 1000px top 10px;
   }
 }
 @keyframes title {
@@ -2556,7 +2502,7 @@ input {
 }
 .dim-catalog {
   border-radius: 30px;
-  background: linear-gradient(rgba(231, 249, 253, 0), #e7f9fd);
+  background: linear-gradient(#e7f9fd00, #e7f9fd);
   padding: 16px 16px 0 16px;
   position: relative;
 }
@@ -2656,7 +2602,7 @@ input {
   }
 }
 .evg-footer__logo-text {
-  color: rgba(0, 0, 0, 0.6);
+  color: #00000099;
   margin-top: 10px;
   padding: 5px;
 }
@@ -2723,7 +2669,7 @@ input {
 }
 
 .evg-footer__line {
-  color: rgba(0, 0, 0, 0.6);
+  color: #00000099;
 }
 
 @media (max-width: 1024px) {
@@ -2756,7 +2702,7 @@ input {
   align-self: center;
   margin: auto;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.6);
+  color: #00000099;
 }
 
 @media (max-width: 1024px) {
@@ -2994,10 +2940,7 @@ img {
 /* LINKS */
 .yur-content__links {
   margin-left: 30px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
-  position: -webkit-sticky;
   position: sticky;
   top: 150px;
 }
@@ -3065,4 +3008,6 @@ img {
 [data-tooltip]:focus:after {
     visibility: hidden;
   }
-}/*# sourceMappingURL=Yuri_Guide.css.map */
+}
+
+/*# sourceMappingURL=Yuri_Guide.css.map */
