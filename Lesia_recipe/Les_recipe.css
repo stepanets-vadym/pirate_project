@@ -2429,7 +2429,7 @@ input {
   }
 }
 .evg-subscribe__text {
-  color: rgba(0, 0, 0, 0.6);
+  color: #00000099;
   text-align: center;
   line-height: 28px;
 }
@@ -2506,7 +2506,7 @@ input {
 }
 .evg-subscribe__inp {
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.4);
+  color: #00000066;
   padding-right: 10px;
   padding-left: 5px;
   height: 100%;
@@ -2567,7 +2567,7 @@ input {
 /*# sourceMappingURL=index.css.map */
 .Les-recipe {
   width: 100%;
-  padding-top: 64px;
+  margin-top: 150px;
 }
 .Les-recipe__text {
   display: block;
@@ -2743,8 +2743,7 @@ input {
   transform: rotateY(-180deg);
   border-radius: 20px;
 }
-.Les:hover,
-.Les .Les__card__2 {
+.Les:hover, .Les .Les__card__2 {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
