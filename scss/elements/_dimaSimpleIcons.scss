@@ -1,0 +1,41 @@
+// *Стиль іконочного міксина____
+.dim-icon__wrap {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.dim-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+
+  // height: 100%;
+}
+// Кнопка із сердцем___________________
+.dim-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  position: absolute;
+  right: 36px;
+  top: 36px;
+  background-color: $c-white;
+  &__icon {
+    color: $c-orange;
+  }
+  &__input {
+    display: none;
+    &:checked {
+      & ~ .icon {
+        color: $c-iconHeart-gray !important;
+      }
+    }
+  }
+}
