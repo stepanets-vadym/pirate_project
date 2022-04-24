@@ -1,15 +1,15 @@
 // карточки
 .Les-recipe {
-  display: block;
+  
   width: 100%;
-  padding-top: 32px;
+  margin-top: 150px;
 
   // обгортка заголовка
   &__text {
     display: block;
     width: 100%;
     text-align: center;
-    padding-top: 32px;
+    
     padding-bottom: 64px;
     // заголовок
     &__title {

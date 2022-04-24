@@ -7,9 +7,18 @@
 
   border-radius: 50%;
   position: absolute;
-  right: 16px;
-  top: 16px;
+  right: 20px;
+  top: 30px;
   background-color: $c-white;
+  @media (max-width: 1400px) {
+    width: 52px;
+  height: 52px;
+  }
+  @media (max-width: 1024px) {
+    width: 42px;
+    height: 42px;
+  }
+
 
   &__icon {
     color: $c-silver;
