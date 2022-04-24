@@ -1777,20 +1777,9 @@ input {
   color: #fd8061;
 }
 
-.dim-icon__wrap {
-  width: 24px;
-  height: 24px;
-  position: relative;
-}
-
 .dim-icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 100%;
+  font-size: 24px;
+  color: #000000;
 }
 
 .dim-check {
@@ -1834,7 +1823,7 @@ input {
     background-position: left 1000px top -1px;
   }
   100% {
-    background-position: left 1200px top -1px;
+    background-position: left 1200px bottom -1px;
   }
 }
 .vad-header {
@@ -2266,7 +2255,6 @@ input {
 .dim-section {
   max-width: 1280px;
   margin: 0 auto;
-  margin-top: 300px;
 }
 .dim-section__header {
   text-align: center;
@@ -2286,6 +2274,11 @@ input {
     font-size: 28px;
   }
 }
+@media (max-width: 768px) and (max-width: 480px) {
+  .dim-section__title {
+    color: #3581b1;
+  }
+}
 .dim-section__subtitle {
   color: #565656;
   font-weight: 400;
@@ -2293,6 +2286,11 @@ input {
   font-size: 18px;
   line-height: 38px;
   margin-top: 30px;
+  max-width: 726px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 1024px) {
   .dim-section__subtitle {
@@ -2307,24 +2305,21 @@ input {
   }
 }
 
-.dim-catalog__wrapper {
+.dim-catalog__body {
+  display: grid;
   padding-top: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 @media (max-width: 1024px) {
-  .dim-catalog__wrapper {
+  .dim-catalog__body {
     padding-top: 50px;
   }
 }
 @media (max-width: 480px) {
-  .dim-catalog__wrapper {
+  .dim-catalog__body {
     padding-top: 30px;
   }
-}
-
-.dim-catalog__body {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
 }
 @media (max-width: 1400px) {
   .dim-catalog__body {
@@ -2333,16 +2328,12 @@ input {
 }
 @media (max-width: 1024px) {
   .dim-catalog__body {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 768px) {
   .dim-catalog__body {
     gap: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .dim-catalog__body {
     grid-template-columns: 1fr;
   }
 }
@@ -2350,7 +2341,7 @@ input {
 .dim-catalog {
   border-radius: 30px;
   background: linear-gradient(#e7f9fd00, #e7f9fd);
-  padding: 16px 16px 0 16px;
+  padding: 16px 16px 16px 16px;
   position: relative;
 }
 
@@ -2367,6 +2358,8 @@ input {
   font-style: normal;
   line-height: 32px;
   letter-spacing: -1px;
+  max-width: 352px;
+  text-align: start;
 }
 .dim-product__footer {
   display: flex;
