@@ -1,0 +1,39 @@
+// карточки
+.Les-recipe {
+  
+  width: 100%;
+  margin-top: 150px;
+
+  // обгортка заголовка
+  &__text {
+    display: block;
+    width: 100%;
+    text-align: center;
+    
+    padding-bottom: 64px;
+    // заголовок
+    &__title {
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      font-size: 36px;
+    }
+  }
+  // обгортка блоку з карточками
+  &__content {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+
+    @media (max-width: 1400px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+    }
+    @media (max-width: 686px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

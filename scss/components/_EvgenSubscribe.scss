@@ -1,32 +1,35 @@
 // EvgenSubscribe
 
 // Subscribe block
+
+// Wrapper
 .evg-subscribe {
   &__wrapper {
     background-color: $c-bg-sub;
     flex-direction: column;
     border-radius: 60px;
     margin-bottom: 50px;
-    margin-top: 200px;
+    position: relative;
     overflow: hidden;
     display: flex;
-    padding: 0;
+    padding: 5px;
 
+    // Media
     @include media("<=desktop") {
       border-radius: 45px;
     }
-
     @include media("<=tablet") {
       border-radius: 30px;
     }
-
     @include media("<=phone") {
       border-radius: 15px;
     }
   }
 
+  // Text block
   &__block-text {
     flex-direction: column;
+    margin-bottom: 50px;
     align-self: center;
     margin-right: 10px;
     margin-left: 10px;
@@ -35,161 +38,200 @@
     display: flex;
     padding: 5px;
 
+    // Media
     @include media("<=desktop") {
+      margin-bottom: 30px;
       margin-top: 6px;
     }
-
     @include media("<=tablet") {
+      margin-bottom: 20px;
       margin-top: 4px;
     }
-
     @include media("<=phone") {
+      margin-bottom: 10px;
       margin-top: 0;
     }
   }
-
+  // Title
   &__title {
     margin-bottom: 10px;
     text-align: center;
-    font-size: $fs-h2;
+    font-size: $fs-h2 + px;
 
+    // Media
     @include media("<=desktop") {
       margin-bottom: 6px;
       font-size: 40px;
     }
-
     @include media("<=tablet") {
       margin-bottom: 5px;
       line-height: 28px;
       font-size: 30px;
     }
-
     @include media("<=phone") {
       margin-bottom: 3px;
       line-height: 18px;
       font-size: 18px;
     }
   }
+  // Text
   &__text {
     color: $c-text-footer;
     text-align: center;
     line-height: 28px;
 
+    // Media
     @include media("<=desktop") {
       line-height: 26px;
     }
-
     @include media("<=tablet") {
       line-height: 19px;
       font-size: 14px;
     }
-
     @include media("<=phone") {
       line-height: 12px;
       font-size: 10px;
     }
   }
-
-  &__block-img-btn {
-    justify-content: space-between;
-    display: flex;
-  }
-
-  &__img-salad,
-  &__img-salad-egg {
-    align-self: flex-end;
-  }
-
+  // Image salad
   &__img-salad {
-    margin-right: 5px;
-  }
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
 
-  &__img-salad-egg {
-    margin-left: 5px;
-  }
-
-  &__inp-btn {
-    background-color: $c-white;
-    border-radius: 24px;
-    align-self: center;
-    margin-right: 5px;
-    margin-left: 5px;
-    padding: 10px;
-    display: flex;
-    height: 80px;
-    width: 480px;
-
+    // Media
     @include media("<=desktop") {
-      border-radius: 20px;
-      padding: 7px;
-      height: 60px;
-      width: 450px;
+      width: 290px;
     }
     @include media("<=tablet") {
-      border-radius: 14px;
-      padding: 5px;
-      height: 40px;
-      width: 420px;
+      width: 170px;
     }
     @include media("<=phone") {
-      border-radius: 6px;
-      padding: 2px;
-      height: 25px;
-      width: 400px;
+      width: 105px;
+    }
+  }
+  // Image salad-egg
+  &__img-salad-egg {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+
+    // Media
+    @include media("<=desktop") {
+      width: 280px;
+    }
+    @include media("<=tablet") {
+      width: 170px;
+    }
+    @include media("<=phone") {
+      width: 115px;
     }
   }
 
-  &__inp {
+  // Input-button block
+  &__input-button {
+    margin-bottom: 85px;
+    margin-right: 10px;
+    align-self: center;
+    position: relative;
+    margin-left: 10px;
+    display: flex;
+    width: 490px;
+    padding: 5px;
+    height: 90px;
+    z-index: 5;
+
+    // Media
+    @include media("<=desktop") {
+      margin-bottom: 80px;
+      height: 75px;
+      width: 430px;
+    }
+    @include media("<=tablet") {
+      margin-bottom: 40px;
+      height: 60px;
+      width: 300px;
+    }
+    @include media("<=phone") {
+      margin-bottom: 20px;
+      height: 35px;
+      width: 150px;
+    }
+  }
+  // Input
+  &__input {
     font-size: $fs-text-input-button;
+    background-color: $c-white;
     color: $c-text-input;
-    padding-right: 10px;
-    padding-left: 5px;
+    padding-right: 145px;
+    border-radius: 24px;
+    padding-left: 10px;
     height: 100%;
     border: none;
     width: 100%;
 
+    // Media
     @include media("<=desktop") {
+      padding-right: 110px;
+      border-radius: 20px;
       font-size: 12px;
     }
-
     @include media("<=tablet") {
+      padding-right: 90px;
+      border-radius: 14px;
       font-size: 10px;
     }
-
     @include media("<=phone") {
+      padding-right: 50px;
+      border-radius: 6px;
+      padding-left: 5px;
       font-size: 6px;
     }
   }
-
-  &__btn {
+  // Button
+  &__button {
     font-size: $fs-text-input-button;
     background-color: $c-black;
     border-radius: 16px;
     padding-right: 30px;
     padding-left: 30px;
     width: fit-content;
+    position: absolute;
+    max-height: 60px;
     color: $c-white;
     height: 100%;
+    right: 15px;
+    top: 15px;
 
+    // Media
     @include media("<=desktop") {
-      font-size: 12px;
-      border-radius: 14px;
       padding-right: 20px;
+      border-radius: 14px;
       padding-left: 20px;
+      max-height: 48px;
+      font-size: 12px;
+      right: 13px;
+      top: 13px;
     }
-
     @include media("<=tablet") {
-      padding-right: 5px;
       border-radius: 10px;
-      padding-left: 5px;
+      padding-right: 15px;
+      padding-left: 15px;
+      max-height: 36px;
       font-size: 10px;
+      right: 12px;
+      top: 12px;
     }
-
     @include media("<=phone") {
       border-radius: 6px;
-      padding-right: 5px;
-      padding-left: 5px;
+      padding-right: 7px;
+      padding-left: 7px;
+      max-height: 17px;
       font-size: 6px;
+      right: 9px;
+      top: 9px;
     }
   }
 }

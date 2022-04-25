@@ -7,20 +7,22 @@ mixin EvgenSubscribe()
       .evg-subscribe__wrapper
         //- Text block
         .evg-subscribe__block-text
+          //- Title
           h2.evg-subscribe__title Deliciousness to your inbox
-          .evg-subscribe__text Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim
-        //- Image-button block
-        .evg-subscribe__block-img-btn
-          //- Image salad block
-          .evg-subscribe__img-salad
-            img(src="./assets/img/img-EvgenSubscribe/salad.png" alt="foto")
+          //- Text
+          .evg-subscribe__text 
+            //- Simptip
+            span.simptip-position-bottom(data-tooltip="Text Subscribe section") Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim
+        //- Image salad
+        .evg-subscribe__img-salad
+          img(src="./assets/img/img-EvgenSubscribe/salad.png" alt="foto")
+        //- Image salad-egg
+        .evg-subscribe__img-salad-egg
+          img(src="./assets/img/img-EvgenSubscribe/salad-egg.png" alt="foto")
           //- Input-button block
-          .evg-subscribe__inp-btn
-            input.evg-subscribe__inp(type="text" placeholder="Your email address...")
-            div.simptip-position-top( data-tooltip="Click here")
-              button.evg-subscribe__btn(type="button")
-                span Subscribe
-          //- Image salad-egg
-          .evg-subscribe__img-salad-egg
-            img(src="./assets/img/img-EvgenSubscribe/salad-egg.png" alt="foto")
-
+        .evg-subscribe__input-button
+          //- Input
+          input.evg-subscribe__input(type="text" placeholder="Your email address...")
+          //- Button
+          button.evg-subscribe__button(type="button")
+            span Subscribe        

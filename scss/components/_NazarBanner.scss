@@ -1,6 +1,6 @@
 .nr-banner {
   padding-top: 150px;
-  height: 100vh;
+  margin-bottom: 50px;
   @include media("<=1160px") {
     margin-bottom: 100px;
     height: auto;
