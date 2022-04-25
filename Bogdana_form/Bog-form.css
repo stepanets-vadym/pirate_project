@@ -2665,13 +2665,15 @@ input {
   transition: 0.15s;
   height: 24px;
   width: 24px;
-  left: 1px;
   top: 1px;
+  left: 1px;
 }
 @media (max-width: 768px) {
   .bog-form__checkbox__label .bog-form__checkbox__switch::before {
-    height: 12px;
-    width: 12px;
+    top: 0px;
+    left: 0px;
+    height: 11px;
+    width: 11px;
   }
 }
 .bog-form__checkbox__label input[type=checkbox] {

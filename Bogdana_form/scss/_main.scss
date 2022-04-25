@@ -228,11 +228,13 @@
       transition: 0.15s;
       height: 24px;
       width: 24px;
-      left: 1px;
       top: 1px;
+      left: 1px;
       @include media("<=tablet") {
-        height: 12px;
-        width: 12px;
+        top: 0px;
+        left: 0px;
+        height: 11px;
+        width: 11px;
       }
     }
 
