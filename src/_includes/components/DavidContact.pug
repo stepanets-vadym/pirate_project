@@ -1,34 +1,36 @@
 mixin DavidContact()
   .Dav-feedback 
+    .Dav-feedback__title
+      h2.Dav-title Contact us
     .container.Dav-feedback__wrapper 
-      .Dav-feedback__title
-          h1.Dav-title Contact us
       .Dav-feedback__photo
-        img(src="./assets/img/cook.png" alt="cook")
+        picture
+          source(srcset="./assets/img/fork.png" media="(max-width: 1024px)")
+          img(src="./assets/img/cook.png" alt="cook")
       .Dav-feedback__form
-          form.Dav-form
-              .Dav-form__name
-                  label.Dav-form__label Name
-                    input.Dav-form__input(placeholder="Enter your name...", type="text")
-              .Dav-form__email
-                  label.Dav-form__label Subject
-                    input.Dav-form__input(placeholder="Enter subject...", type="email")
-              .Dav-form__subject
-                  label.Dav-form__label email address
-                      input.Dav-form__input(placeholder="Your email address...")
-              .Dav-form__type
-                  label.Dav-form__label Enquiry type
-                      select.Dav-form__selector(name="select")
-                        option(value="value1" selected) Advertising
-                        option(value="value2") Значение 2
-                        option(value="value3") Значение 3
-              .Dav-form__messages
-                  label.Dav-form__label.label-big Messages
-                      input.Dav-form__input.input-big(placeholder="Enter your messages...", type="text")
-              .Dav-form__submit
-                button(type="button").btn.btn-dark.Dav-form__button
-                  span Submit
-                <!--
-                button(type="button" data-tooltip="yea boy").btn.btn-dark.Dav-form__button.simptip-position-top.simptip-success
-                  span Submit
-                <!-->
+        form.Dav-form
+          .Dav-form__name
+            label.Dav-form__label 
+              span Name
+              input.Dav-form__input(placeholder="Enter your name...", type="text")
+          .Dav-form__email
+            label.Dav-form__label 
+              span Subject
+              input.Dav-form__input(placeholder="Enter subject...", type="email")
+          .Dav-form__subject
+            label.Dav-form__label 
+              span email address
+              input.Dav-form__input(placeholder="Your email address...")
+          .Dav-form__type
+            label.Dav-form__label
+              span Enquiry type
+              select.Dav-form__selector(name="select")
+                option(value="value1" selected) Advertising
+                option(value="value2") Значение 2
+                option(value="value3") Значение 3
+          .Dav-form__messages
+            label.Dav-form__label Messages
+              textarea.Dav-form__input.input-big(placeholder="Enter your messages...", type="text")
+          .Dav-form__submit
+            button(type="button" data-tooltip="yea boy").btn.btn-dark.Dav-form__button.simptip-position-top.simptip-success
+              span Submit
