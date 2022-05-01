@@ -5,7 +5,42 @@
   font-size: 20px;
   color: $c-white;
   height: 56px;
-  &:hover{
-    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+  &:hover {
+    box-shadow: 0px 4px 10px 0px rgba($c-black, 0.5);
+  }
+  &--banner {
+    background-color: $c-black;
+    align-items: center;
+    border-radius: 16px;
+    font-size: 24px;
+    padding: 0 35px;
+    color: $c-white;
+    display: flex;
+    height: 60px;
+    &:hover {
+      // background-color: $c-chinese-black;
+      color: $c-magenta;
+    }
+    &:focus {
+      background-color: $c-black;
+    }
+    @media (min-width: 768px) and (max-width: 830px) {
+      height: 40px;
+      padding: 0 5px;
+    }
+    @include media("<=phone") {
+      padding: 0 10px;
+      font-size: 16px;
+      height: 30px;
+    }
+  }
+  &__banner-text {
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    @include media("<=phone") {
+      margin-right: 10px;
+      font-size: 10px;
+    }
   }
 }

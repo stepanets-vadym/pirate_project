@@ -1,0 +1,14 @@
+.logo {
+  font-size: $fs-subtitle + px;
+  font-family: $f-Lobster;
+  position: relative;
+  z-index: 10;
+  & a {
+    color: $c-black;
+    padding: 5px;
+    &::after {
+      content: ".";
+      color: $c-orange;
+    }
+  }
+}

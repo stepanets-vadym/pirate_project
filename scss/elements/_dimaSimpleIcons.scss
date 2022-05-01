@@ -1,0 +1,30 @@
+// *Стиль іконочного міксина____
+
+.dim-icon {
+  font-size: 24px;
+  color: $c-black;
+}
+// Кнопка із сердцем___________________
+.dim-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  position: absolute;
+  right: 36px;
+  top: 36px;
+  background-color: $c-white;
+  &__icon {
+    color: $c-orange;
+  }
+  &__input {
+    display: none;
+    &:checked {
+      & ~ .icon {
+        color: $c-iconHeart-gray !important;
+      }
+    }
+  }
+}
