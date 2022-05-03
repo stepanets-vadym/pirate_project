@@ -175,10 +175,13 @@
   &__submit {
     grid-area: 5 / 1 / 6 / 2;
     padding-top: 48px;
+    @include media("<=tablet"){
+      padding-top: 35px;
+    }
     @include media("<=phone") {
       grid-area: 5/1/6/3;
       margin: 0 auto;
-    padding-top: 28px;
+    padding-top: 30px;
 
     }
   }
@@ -199,8 +202,9 @@
 // *Модифікатори
 
 .input-big {
-  max-height: 200px;
+  max-height: 190px;
   max-width: 840px;
   padding: 20px;
   width: 100%;
+  resize: none;
 }
