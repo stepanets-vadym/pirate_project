@@ -88,7 +88,7 @@
       max-width: 400px;
     }
     @include media("<=tablet") {
-      padding: 5px 8px;
+      padding: 10px 15px;
       max-width: 250px;
       z-index: 2;
     }
@@ -98,21 +98,30 @@
   }
 }
 // Content
-.bog__header {
+.bog-header {
   font-size: $fs-subtitle + px;
   justify-content: center;
   align-items: center;
+  cursor: default;
   display: flex;
   @include media("<=tablet") {
     font-size: 18px;
   }
   @include media("<=phone") {
-    display: flex;
+    font-size: 10px;
     flex-direction: column;
+    display: flex;
   }
 
   &__logo {
     font-family: $f-Lobster;
+    cursor: default;
+    @include media("<=tablet") {
+      font-size: 23px;
+    }
+    @include media("<=phone") {
+      font-size: 15px;
+    }
   }
 }
 // Form
@@ -146,7 +155,9 @@
   }
 
   &__input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 4px;
+    transition: 0.4s;
     padding: 0 10px;
     height: 50px;
     width: 100%;
@@ -157,8 +168,7 @@
   }
 
   &__input:hover {
-    background-color: #0000003d;
-    color: $c-black;
+    border: 1px solid $c-black;
   }
 
   &__input:focus {
@@ -195,12 +205,13 @@
   // Checkbox
   &__checkbox {
     align-items: center;
-    display: flex;
 
     &__label {
+      display: flex;
+    }
+    &__switch {
       margin-right: 10px;
     }
-
     &__label &__switch {
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 25%/50%;
@@ -222,9 +233,9 @@
       content: "";
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
       display: inline-block;
-      position: absolute;
-      border-radius: 50%;
       background: white;
+      border-radius: 50%;
+      position: absolute;
       transition: 0.15s;
       height: 24px;
       width: 24px;
@@ -258,8 +269,8 @@
     }
 
     &__text {
-      display: flex;
       align-items: center;
+      display: flex;
     }
   }
   // Button
@@ -272,7 +283,7 @@
     @include media("<=tablet") {
       height: 30px;
       margin-top: 10px;
-      font-size: 12px;
+      font-size: 10px;
     }
     @include media("<=phone") {
       margin-top: 5px;
@@ -281,13 +292,17 @@
 
   &__button-wrapper {
     background-color: $c-black;
-    color: $c-white;
     border-radius: 5px;
     padding: 5px 20px;
+    color: $c-white;
     cursor: pointer;
     border: none;
     width: 530px;
   }
+  &__button-wrapper:hover {
+    opacity: calc(0.85);
+  }
+
   // Registration-link
 
   &__registration-link {
@@ -304,5 +319,6 @@
 
   &__registration-link__question {
     margin-right: 5px;
+    cursor: default;
   }
 }
