@@ -2,10 +2,12 @@
   font-size: $fs-subtitle + px;
   font-family: $f-Lobster;
   position: relative;
+  width: fit-content;
   z-index: 10;
   & a {
     color: $c-black;
     padding: 5px;
+    display: flex;
     &::after {
       content: ".";
       color: $c-orange;

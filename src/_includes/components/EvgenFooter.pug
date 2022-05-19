@@ -3,9 +3,8 @@
 mixin EvgenFooter()
   //- Footer block
   footer.evg-footer
-    .container
-      //- Wrapper
-      .evg-footer__wrapper
+    //- Wrapper
+    .container.evg-footer__wrapper
         //- Logo-link block
         .evg-footer__logo-link
           //- Logo block
@@ -39,7 +38,7 @@ mixin EvgenFooter()
         .evg-footer__text-icon
           //- Text
           .evg-footer__text © 2020 Flowbase. Powered by 
-            span.evg-footer__text-color Webflow
+            a(href="#").evg-footer__text-color Webflow
           //- Icon block
           .evg-footer__icon-block
             //- Facebook

@@ -1,8 +1,8 @@
 .nr-banner {
   padding-top: 150px;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
   @include media("<=1160px") {
-    margin-bottom: 100px;
+    // margin-bottom: 100px;
     height: auto;
   }
   &__content {
@@ -262,6 +262,8 @@
     width: 150px;
   }
 }
+
+
 // SVG animation
 .nr-timer {
   transform-origin: center;
@@ -271,21 +273,26 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: 1s;
+  
+  @keyframes time-circle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  // Animation title
+  @keyframes title {
+    0% {
+      background-position: left 0px top 10px;
+    }
+    100% {
+      background-position: left 1000px top 10px;
+    }
+  }
 }
-@keyframes time-circle {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-// Animation title
-@keyframes title {
-  0% {
-    background-position: left 0px top 10px;
-  }
-  100% {
-    background-position: left 1000px top 10px;
-  }
+
+#icon-Heart{
+  cursor: pointer;
 }

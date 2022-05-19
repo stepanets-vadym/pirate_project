@@ -8,7 +8,7 @@ mixin DavidContact()
           source(srcset="./assets/img/fork.png" media="(max-width: 1024px)")
           img(src="./assets/img/cook.png" alt="cook")
       .Dav-feedback__form
-        form.Dav-form
+        form(method="post").Dav-form
           .Dav-form__name
             label.Dav-form__label 
               span Name
@@ -16,11 +16,11 @@ mixin DavidContact()
           .Dav-form__email
             label.Dav-form__label 
               span Subject
-              input.Dav-form__input(placeholder="Enter subject...", type="email")
+              input.Dav-form__input(placeholder="Enter subject...", type="text")
           .Dav-form__subject
             label.Dav-form__label 
               span email address
-              input.Dav-form__input(placeholder="Your email address...")
+              input.Dav-form__input(placeholder="Your email address..." type="email")
           .Dav-form__type
             label.Dav-form__label
               span Enquiry type

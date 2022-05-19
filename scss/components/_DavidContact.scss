@@ -16,6 +16,7 @@
   }
 }
 .Dav-feedback {
+  padding-top: 120px;
   margin-bottom: 30px;
   // * Обгортка
   &__wrapper {
@@ -123,11 +124,12 @@
     @include media("<=phone") {
       max-height: 45px;
     }
-    &:hover {
+    &:focus {
       border-color: $c-black;
     }
   }
   &__selector {
+    cursor: pointer;
     max-height: 60px;
     max-width: 400px;
     height: 100%;
